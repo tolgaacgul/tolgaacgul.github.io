@@ -45,3 +45,9 @@ iframe{
     text-align: left;
 
 }
+
+
+#idIframe{
+    height: 700px;
+    width: 100%;
+}

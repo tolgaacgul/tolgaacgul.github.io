@@ -1,10 +1,15 @@
-var btnGenelBilgi = document.getElementById("idGenelBilgi");
-var btnAileBilgi = document.getElementById("idAileBilgi");
-var btnSGKBilgi = document.getElementById("idSGKBilgi");
-var btnUcretBilgi = document.getElementById("idUcretBilgi");
-var btnDigerBilgi = document.getElementById("idDigerBilgi");
+var projeler = document.getElementById("idProjeler");
+var github = document.getElementById("idGitHub");
+var cv = document.getElementById("idCV");
+var iletisim = document.getElementById("idIletisim");
+var hakkimda = document.getElementById("idHakkimda");
 
-var Personeliframe = document.getElementById("idIframePersonel").
-btnGenelBilgi.onclick = function(){
-    Personeliframe.src = "personelGenelBilgiGir.html"
+var iframe = document.getElementById("idIframe");
+
+
+github.onclick = function(){
+    github.href = "https://github.com/tolgaacgul";
+}
+cv.onclick = ()=>{
+    cv.href = "pages/cv.html"
 }
