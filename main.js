@@ -11,5 +11,8 @@ github.onclick = function(){
     github.href = "https://github.com/tolgaacgul";
 }
 cv.onclick = ()=>{
-    cv.href = "pages/cv.html"
+    cv.href = "assets/pages/cv.html"
+}
+projeler.onclick = ()=>{
+    projeler.href = "projects/meteoroyunu/index.html"
 }
