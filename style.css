@@ -27,7 +27,6 @@
 /* -------------------------------------------- */
 /* Div Body */
 .divBody{
-    box-sizing: border-box;
     overflow: hidden;
 }
 .divBody h1,h2,h3,p{
@@ -76,9 +75,12 @@
 /* -------------------------------------------- */
 .divFooter{
     margin-top: 20px;
-    border: 1px solid blue;
+    background-color: black;
 }
-
+.divFooter p{
+    padding: 10px;
+    color: white;
+}
 
 
 
@@ -87,8 +89,30 @@
 
 /* //////////////////////////////////// */
 
-@media only screen and (max-width: 600px){
-    .mainBody, .leftSide{
+@media  screen and (max-width: 700px){
+    .navBar ul li a{
+        color: white;
+        font-size: 13px;
+        padding: 10px 7px;
+    }
+
+    .divBody .leftSide{
+        /* overflow: auto; */
         width: 100%;
+        margin: 10px 0 10px 0;
+        display: block;
+        float: none;
+        border-radius: 9px;
+    }
+    .divBody .mainBody{
+        /* overflow: auto; */
+        width: 100%;
+        display: block;
+        float: none;
+        margin: 10px 0 10px 0;
+        border-radius: 9px;
+    }
+    .divFooter{
+        border-radius: 9px;
     }
 }
