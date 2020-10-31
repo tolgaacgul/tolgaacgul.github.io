@@ -139,7 +139,7 @@ body h1,h2,h3,h4,h5,h6,p{
 
 /* //////////////////////////////////// */
 
-@media  screen and (max-width: 888px){
+@media  screen and (max-width: 600px){
     /* ------------ MAIN ------------- */
     .divBody .leftSide{
         overflow: hidden;
