@@ -1,45 +1,60 @@
 *{
     box-sizing: border-box;
 }
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(43, 43, 43);
+}
+body h1,h2,h3,h4,h5,h6,p{
+    color: black;
+    padding: 0 15px ;
+}
 /* -------------------------------------------- */
 /* Navigation Bar */
-.navBar ul{
-    /* margin: 0;
-    padding: 0; */
+.divNavBar{
+    margin: 0px;
+}
+.divNavBar ul{
+    margin: 0px;
     list-style-type: none;
     background-color: black;
     overflow: auto;
 }
-.navBar ul li{
+.divNavBar ul li{
     float:left;
 }
-.navBar ul li a{
+.divNavBar ul li a{
     text-decoration: none;
-    padding: 18px 15px;
+    padding: 20px 20px;
     color: white;
     display: block;
+    font-size: 19px;
     text-align: center;
 }
-.navBar ul li a:hover{
-    background-color: red;
+.divNavBar ul li a:hover{
+    background-color: rgb(204, 57, 57);
 }
 
 /* -------------------------------------------- */
 /* Div Body */
 .divBody{
+    margin: 15px 25px;
     overflow: hidden;
 }
-.divBody h1,h2,h3,p{
-    color: white;
-    padding: 0 15px ;
-}
-/* Side Bar */
+
+/* LEFT Side  */
 .divBody .leftSide{
+    border: 1px solid black;
+    background-color: white;
     float: left;
     width: 22%;
-    background-color: black;
-    min-height: 500px;
+    min-height: 700px;
     padding: 20px;
+    border-radius: 5px;
+}
+.divBody .leftSide h1,h2,h3,h4,h5,h6,p{
+    text-align: center;
 }
 .divBody .leftSide .divImg{
     height: 70%;
@@ -48,20 +63,45 @@
     overflow: hidden;
     position: relative;
     margin: auto;
+    margin-bottom: 40px;
 }
 .divBody .leftSide .divImg img{
     width: 100%;
-    height: 100%;
 }
 
-/* Main Body */
-.divBody .mainBody{
-    background-color: black;
+/* MIDDLE Side */
+.divBody .middleSide{
+    border-radius: 5px;
+    background-color: white;
     width: 77%;
+    height: 999px;
     float: left;
-    padding: 20px;
     margin: 0 0 0 1%;
+    text-align: center;
 }
+.middleSide iframe{
+    border-radius: 5px;
+    border: none;
+}
+/* -------------------------------------------- */
+/* CARD View */
+.card{
+    background-color: rgb(204, 57, 57);
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    float: left;
+    margin: 1.66%;
+    box-shadow: 5px 17px 18px 0 rgba(0,0,0,0.6);
+}
+.card:hover{
+    box-shadow: 7px 22px 24px 0 rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+}
+
 /* CLEARFİX METHOD */
 /* .clearfix {
     overflow: auto;
@@ -75,13 +115,23 @@
 /* -------------------------------------------- */
 .divFooter{
     margin-top: 20px;
+    height: auto;
+    overflow: hidden;
     background-color: black;
 }
-.divFooter p{
-    padding: 10px;
+.divFooter .footerCard{
+    float: left;
+    width: 33.33%;
+
+}
+.footerCard h1{
+    text-align: center;
     color: white;
 }
-
+.footerCard p{
+    text-align: center;
+    color: white;
+}
 
 
 
@@ -90,29 +140,42 @@
 /* //////////////////////////////////// */
 
 @media  screen and (max-width: 700px){
-    .navBar ul li a{
+    /* ---------- Nav Bar ------------ */
+    /* .divNavBar{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    .divNavBar ul{
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+    .divNavBar ul li a{
         color: white;
         font-size: 13px;
-        padding: 10px 7px;
-    }
+        padding: 20px 15px;
+    } */
 
-    .divBody .leftSide{
-        /* overflow: auto; */
+    /* ------------ MAIN ------------- */
+    /* .divBody .leftSide{
+        overflow: hidden;
         width: 100%;
-        margin: 10px 0 10px 0;
+        margin: 10px 5px 10px 5px;
+        display: block;
+        border-radius: 9px;
+    }
+    .divBody .middleSide{
+        overflow: auto;
+        width: 100%;
         display: block;
         float: none;
-        border-radius: 9px;
-    }
-    .divBody .mainBody{
-        /* overflow: auto; */
-        width: 100%;
-        display: block;
-        float: none;
         margin: 10px 0 10px 0;
         border-radius: 9px;
-    }
-    .divFooter{
+    } */
+
+    /* ------------ Footer ------------- */
+    /* .divFooter{
         border-radius: 9px;
-    }
+    } */
 }
