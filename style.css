@@ -139,43 +139,36 @@ body h1,h2,h3,h4,h5,h6,p{
 
 /* //////////////////////////////////// */
 
-@media  screen and (max-width: 700px){
-    /* ---------- Nav Bar ------------ */
-    /* .divNavBar{
-        margin: 0px;
-        padding: 0px;
-        overflow: hidden;
-    }
-    .divNavBar ul{
-        margin-top: 0px;
-        margin-bottom: 0px;
-
-    }
-    .divNavBar ul li a{
-        color: white;
-        font-size: 13px;
-        padding: 20px 15px;
-    } */
-
+@media  screen and (max-width: 888px){
     /* ------------ MAIN ------------- */
-    /* .divBody .leftSide{
+    .divBody .leftSide{
         overflow: hidden;
-        width: 100%;
-        margin: 10px 5px 10px 5px;
+        width: 99%;
         display: block;
+        margin: 10px 5px 10px 5px;
         border-radius: 9px;
+    }
+    .divBody .leftSide .divImg{
+    width: 38%;
+    margin-top: 30px;
     }
     .divBody .middleSide{
         overflow: auto;
-        width: 100%;
+        width: 99%;
         display: block;
-        float: none;
-        margin: 10px 0 10px 0;
+        margin: 10px 5px 10px 5px;
         border-radius: 9px;
-    } */
+    }
 
-    /* ------------ Footer ------------- */
-    /* .divFooter{
-        border-radius: 9px;
-    } */
+}
+
+@media  screen and (max-width: 600px){
+    .divNavBar ul{
+        padding: 0px;
+        margin: 0px;
+    }
+    .divNavBar ul li a{
+        padding: 10px 15px;
+        margin: 0px;
+    }
 }
