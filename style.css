@@ -177,12 +177,12 @@ body h1,h2,h3,h4,h5,h6,p{
 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 600px){
     h1{
         font-size: 0.9rem;
     }
     p{
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .divNavBar ul{
         padding: 0px;
@@ -195,6 +195,10 @@ body h1,h2,h3,h4,h5,h6,p{
     }
     .card{
         width: 48%;
+        margin: 1%;
+    }
+    .divBody{
+        padding: 0px;
         margin: 1%;
     }
 }
