@@ -45,12 +45,12 @@ body h1,h2,h3,h4,h5,h6,p{
 
 /* LEFT Side  */
 .divBody .leftSide{
-    border: 1px solid black;
+    border: none;
     background-color: white;
     float: left;
     width: 22%;
     min-height: 700px;
-    padding: 20px;
+    padding-top: 4%;
     border-radius: 5px;
 }
 .divBody .leftSide h1,h2,h3,h4,h5,h6,p{
@@ -71,6 +71,7 @@ body h1,h2,h3,h4,h5,h6,p{
 
 /* MIDDLE Side */
 .divBody .middleSide{
+    border: none;
     border-radius: 5px;
     background-color: white;
     width: 77%;
@@ -138,9 +139,23 @@ body h1,h2,h3,h4,h5,h6,p{
 
 
 /* //////////////////////////////////// */
-
+@media only screen and (max-width: 1000px){
+    h1{
+        font-size: 1.3rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    h1{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+}
 @media only screen and (max-width: 600px){
-    /* ------------ MAIN ------------- */
     .divBody .leftSide{
         overflow: hidden;
         width: 99%;
@@ -149,8 +164,8 @@ body h1,h2,h3,h4,h5,h6,p{
         border-radius: 9px;
     }
     .divBody .leftSide .divImg{
-    width: 38%;
-    margin-top: 30px;
+    width: 45%;
+    margin-top: 3%;
     }
     .divBody .middleSide{
         overflow: auto;
@@ -163,8 +178,11 @@ body h1,h2,h3,h4,h5,h6,p{
 }
 
 @media only screen and (max-width: 600px){
-    *{
-        font-size: 1rem;
+    h1{
+        font-size: 0.9rem;
+    }
+    p{
+        font-size: 0.6rem;
     }
     .divNavBar ul{
         padding: 0px;
@@ -174,5 +192,9 @@ body h1,h2,h3,h4,h5,h6,p{
         padding: 10px 15px;
         margin: 0px;
         font-size: 1rem;
+    }
+    .card{
+        width: 48%;
+        margin: 1%;
     }
 }
