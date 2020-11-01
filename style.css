@@ -35,6 +35,11 @@ body h1,h2,h3,h4,h5,h6,p{
 .divNavBar ul li a:hover{
     background-color: rgb(204, 57, 57);
 }
+.divNavBar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* -------------------------------------------- */
 /* Div Body */
@@ -74,9 +79,10 @@ body h1,h2,h3,h4,h5,h6,p{
     border-radius: 5px;
     background-color: white;
     width: 77%;
-    height: 999px;
+    height: 1000px;
     float: left;
     margin: 0 0 0 1%;
+    padding: 1% 5%;
     text-align: center;
 }
 .middleSide iframe{
