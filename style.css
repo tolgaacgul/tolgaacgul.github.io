@@ -92,16 +92,23 @@ body h1,h2,h3,h4,h5,h6,p{
 /* -------------------------------------------- */
 /* CARD View */
 .card{
-    background-color: rgb(204, 57, 57);
+    background-color: rgb(203, 82, 82);
     width: 30%;
     overflow: hidden;
     border-radius: 10px;
     float: left;
     margin: 1.66%;
-    box-shadow: 5px 17px 18px 0 rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.6);
+}
+.card h2{
+    color: rgb(255, 211, 211);
+}
+.card p{
+    color: white;
 }
 .card:hover{
-    box-shadow: 7px 22px 24px 0 rgba(0,0,0,0.8);
+    background-color: rgb(204, 57, 57);
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.8);
     cursor: pointer;
 }
 .card img{
