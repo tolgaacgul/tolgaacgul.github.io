@@ -7,7 +7,7 @@ body{
 }
 .container{
     position: absolute;
-    top: 30%;
+    top: 18%;
     width: 100%;
     vertical-align: middle;
     border-radius: 10px;
@@ -46,11 +46,45 @@ input[type=text]{
 }
 
 /* İNDEX */
+#idTahminYap{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(53, 53, 53);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0px 0px 10px 11px;
+}
+#idTahminYap a{
+    color: rgb(184, 162, 162);
+    text-decoration: none;
+    font-size: 30px;
+}
+#idTahminYap:hover{
+    background-color: rgb(87, 85, 85);
+    width: 41px;
+    height: 41px;
+    box-shadow: 5px 5px 5px #000;
+}
+#idTahminYap:focus{
+    background-color: rgb(87, 85, 85);
+    width: 39px;
+    height: 39px;
+}
+#idTahminYap:hover a{ 
+    color: white;
+}
 .tahminContainer{
     width: 100%;
+    height: 100%;
     background-color: thistle;
     margin: 0px;
     padding: 0px;
+}
+.tahminContainer h1{
+    margin: 0px;
+    padding: 15px 0px;
 }
 .rowHead{
     width: 100%;
