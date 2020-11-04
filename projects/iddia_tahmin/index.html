@@ -3,45 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iddia Tahminleri</title>
+    <title>Giriş</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: darkcyan;">
-    <div class="tahminContainer">
-        <h1 style="text-align: center;">VIP Tahminler</h1>
-        <div class="rowHead">
-            <div class="col-10">Kod</div>
-            <div class="col-30">Ev</div>
-            <div class="col-30">Deplasman</div>
-            <div class="col-20">Tahmin</div>
-            <div class="col-10">Değer</div>
-        </div>
-        <div class="row">
-            <div class="col-10">5261</div>
-            <div class="col-30">BJK</div>
-            <div class="col-30">TS</div>
-            <div class="col-20">M.S</div>
-            <div class="col-10">2</div>
-        </div>
-
-        <div class="row">
-            <div class="col-10">5379</div>
-            <div class="col-30">Inter</div>
-            <div class="col-30">RealMadrid</div>
-            <div class="col-20">M.S</div>
-            <div class="col-10">2/2</div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-10">2379</div>
-            <div class="col-30">AZ</div>
-            <div class="col-30">Bursa</div>
-            <div class="col-20">Alt/Üst</div>
-            <div class="col-10">1.5 Üst</div>
-        </div>
-    </div>
+<body style="background-color: rgb(0, 103, 103);">
+    <div class="container">
+        <h3>Admin Giriş</h3>
+        <label for="adminName">Kullanıcı Adı</label><br>
+        <input type="text" name="adminName" id="idAdminName"><br>
     
-    <div id="idTahminYap"><a href="creat_prediction.html">+</a></div>
+        <label for="adminSifre">Kullanıcı Şifresi</label><br>
+        <input type="text" name="adminSifre" id="idAdminSifre">
+
+        <a href="creat_prediction.html" id="idBtnGiris">Giriş</a>
+
+        <p>Admin değil iseniz <a href="predictions.html"> <b>TAHMİN</b> </a> sayfasına geçebilirsiniz</p>
+    </div>
+
 </body>
 </html>
