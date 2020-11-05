@@ -8,12 +8,22 @@
 </head>
 <body style="background-color: white;">
     <h1 style="text-align: center;">Certificates</h1>
-        <div class="card">
-            <p>Bilgi Teknolojilerine Giris Certificate</p><hr>
-            <h2>BTK Akademi</h2>
-        </div>
-        
-
-
+    <div class="card" id="idBTGS">
+        <p>Bilgi Teknolojilerine Giris Sertifikası</p><hr>
+        <h2>BTK Akademi</h2>
+    </div>
+    <div class="card" id="idSQLSiTVTS">
+        <p>SQL Server ile Temel Veri Taban Tasarm Sertifikası</p><hr>
+        <h2>ISMEK</h2>
+    </div>
 </body>
+
+<script>
+    document.querySelector("#idBTGS").onclick = function(){
+        window.open("../cert/btkakademi_bilgi_teknolojilerine_giris_certificate.pdf", "_blank");
+    }
+    document.querySelector("#idSQLSiTVTS").onclick = function(){
+        window.open("../cert/ismek_sql_server_ile_temel_veri_taban_tasarm_sertifikas.pdf", "_blank");
+    }
+</script>
 </html>
