@@ -212,9 +212,9 @@ body h1,h2,h3,h4,h5,h6,p{
         margin: 0px;
     }
     .divNavBar ul li a{
-        padding: 10px 15px;
+        padding: 6px 10px;
         margin: 0px;
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .card{
         width: 48%;
