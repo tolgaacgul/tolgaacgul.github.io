@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container-login">
-        <label for="userName">User Name</label>
-        <input type="text" name="userName" id="">
-        <label for="userPass">User Password</label>
-        <input type="text" name="userPass" id="">
+    <div class="login-container">
+        <div class="login-info">
+            <div><h1>Business Analysis</h1></div>
+            <div><p>Easily record your entry, exit, and breaks!</p></div>
+        </div>
+        <div class="login-data">
+            <div class="data-boxs">
+                <input type="text" name="username" class="login-forms logintext" id="username" placeholder="User Name">
+            </div>
+            <div class="data-boxs">
+                <input type="text" name="userpass" class="login-forms logintext" id="userpas" placeholder="User Password">
+            </div>
+            <div class="data-boxs">
+                <button class="login-forms send-data" id="idSendData">Login</button>
+            </div>
+            <div class="data-boxs">
+                <a href="#">Are You Team Leader?</a>
+            </div>
+        </div>
     </div>
-    
+
+    <script>
+        document.querySelector("#idSendData").onclick = function(){
+            window.open("home.html", "_blank");
+        }
+    </script>
 </body>
+
 </html>
