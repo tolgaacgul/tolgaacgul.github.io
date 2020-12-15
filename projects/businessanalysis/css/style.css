@@ -58,6 +58,7 @@ body{
 }
 .data-boxs button.send-data:hover{
     background-color: #56a528;
+    cursor:pointer;
 }
 .data-boxs button.send-data:focus{
     background-color: #4b9123;
@@ -67,4 +68,4 @@ body{
     text-decoration: none;
     color: #1977f2;
 }
-/*----------------------- Team Leader Login Kısmı -----------------------*/
+/*----------------------- Home Kısmı -----------------------*/

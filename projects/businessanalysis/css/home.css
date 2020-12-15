@@ -1,0 +1,16 @@
+html, body{
+    height: 100%;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+.sidebar{
+    width: 255px;
+    background: #1977f2;
+}
+.contentbar{
+    background: red;
+    flex: 1;
+}
