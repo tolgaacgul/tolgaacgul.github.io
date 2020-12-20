@@ -8,7 +8,7 @@ body{
 }
 
 .sidebar{
-    width: 300px;
+    width: 230px;
     padding: 5px;
     background: #1977f2;
 }
@@ -19,10 +19,10 @@ body{
     background-color: #185cb6;
     border-radius: 5px;
     padding: 5px 10px;
-    align-items: center;
+    align-items: center;    /* dikeyde ortalar */
     margin-bottom: 10px;
 }
-.card h3,p{
+.sidebar .card h3,p{
     margin: 0px;
     padding: 0px;
 }
@@ -31,6 +31,7 @@ body{
     height: 40px;
     border-radius: 50%;
     background-color: #1977f2;
+    flex-shrink: 0; /* daralmasını önler */
 }
 .card .content{
     flex-grow: 1;
@@ -43,4 +44,5 @@ body{
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    flex-shrink: 0; /* daralmasını önler */
 }
