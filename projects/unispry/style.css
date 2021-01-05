@@ -4,31 +4,156 @@
     box-sizing: border-box;
 }
 
-footer.bottomMenu{
-    background-color: rgb(61, 96, 212);
-    color: white;
-    display: flex;
-    align-content: flex-end;
-    justify-content:space-evenly; /*aralıklı boşluk genişliğe yayar*/
-    border-radius: 10px 10px 0 0;
-    padding: 0 30px;
+.button:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
-.bottomMenuButtons{
+.bg-ylw{
+    background: yellow;
+}
+.bg-red{
+    background: red;
+}
+.flex-row{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+.round{
+    border-radius: 50%;
+}
+.em1{
+    width: 1em;
+    height: 1em;
+}
+.v-center{
+    vertical-align: center;
+}
+.t-center{
+    text-align: center;
+}
+.flex-v-center{
+    display: flex;
     align-items: center;
-    width: 20%;
-    height: 100%;
+}
+.flex-h-center{
+    display: flex;
     justify-content: center;
 }
-.bottomMenuButtons .bottomMenuIcon{
-    font-size: 40px;
-    height: 1em;
-    width: 1em;
-    background-color: #333;
-    margin: 5px 0;
+/* ******************** HEADER ******************** */
+header{
+    position: sticky;
+    top: 0px;
 }
-.bottomMenuButtons .bottomMenuName{
-    color: cornsilk;
-    margin-bottom: 5px;
+#idWarning{
+    padding: 5px;
+}
+#menu-row{
+    height: 35px;
+    padding: 10px 8%;
+    background: rgb(34, 55, 65);
+}
+#menu-row  h3{
+    color: rgb(255, 255, 255);
+}
+#menu-row div{
+    margin: 0 5px;
+}
+#idSearch{
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    height: 20px;
+    max-width: 360px;
+    padding: 0px 10px;
+}
+nav a{
+    padding: 9px 5px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    background-color: teal;
+
+}
+/* ******************** secContent ******************** */
+#secContent{
+    margin: 0 3%;
+}
+
+/* ******************** MAİN ******************** */
+
+.grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    background: blueviolet;
+    padding: 9px;
+    grid-gap: 5px;
+    color: white;
+}
+.grid-container div{
+    background: red;
+    text-align: center;
+    padding: 10px;
+}
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end:3
+}
+.grid-item2{
+    grid-row-start: 1;
+    grid-row-end:3;
+    grid-column: 3/4;
+}
+.grid-item5{
+    grid-column: 1/span 3;
+}
+
+
+
+
+
+
+.agrid-container{
+    display: grid;
+    grid-template-areas: 'h h h h h h' 'm ma ma ma r r' 'm f f f f f ' ;
+    background: yellowgreen;
+    padding: 10px;
+    grid-gap: 3px;
+}
+.agrid-container div{
+    background: red;
+    color: white;
+    text-align: center;
+    border: 1px dotted white ;
+    padding: 10px;
+    font-size: 30px;
+}
+.agrid-item1{
+    grid-area: h;
+}
+.agrid-item2{
+    grid-area: m;
+}
+.agrid-item3{
+    grid-area: ma;
+}
+.agrid-item4{
+    grid-area: r;
+}
+.agrid-item5{
+    grid-area: f;
+}
+
+
+
+
+
+
+
+/* ******************** RESPONSİVE ******************** */
+
+@media only screen and (max-width:700px){
+    .agrid-container div{
+        background: blueviolet;
+    }
 }
