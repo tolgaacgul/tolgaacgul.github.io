@@ -52,7 +52,6 @@ function fncSamples(n){
     //sil fncDrawSample fonk için
     const clsOrneklemler = document.querySelector(".clsOrneklemler")
     clsOrneklemler.innerHTML = "";
-    
 
     if(n<1 || n>4){
         fncDrawSample(1,"Lütfen 1 ile 4 arasında bir n giriniz ki örneklem uzayı hesaplayabilelim!")
