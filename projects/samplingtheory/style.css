@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: rgb(255, 255, 255);
+    margin: 15px 5px;
+    border-bottom: 1px solid wheat;
+}
+p{
+    margin: 5px;
+}
+#middle{
+    display: flex;
+}
+input{
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    padding: 10px;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: darkslategrey;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    color:white;
+    background-color: rgb(47, 79, 79, 0.8);
+    cursor: pointer;
+}
+#sidebar{
+    padding: 15px;
+    width: 30%;
+    height: 100vh;
+    background-color: #333;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    padding: 15px;
+    width: 70%;
+    height: 100vh;
+    background-color: darkslategrey;
+    color: ghostwhite;
+}
+
+#idUzay{
+    background-color:rgb(99, 122, 122);
+    padding: 10px;
+}
+.clsOrneklemler{
+    position: relative;
+    overflow: hidden;
+}
+.clsOrneklem{
+    float: left;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: yellow;
+    color: rgb(25, 29, 17);
+    width:fit-content;
+}
