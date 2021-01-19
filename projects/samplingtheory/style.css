@@ -69,9 +69,11 @@ main{
     height: 100vh;
     background-color: darkslategrey;
     color: ghostwhite;
+    position: relative;
 }
 
 #idUzay{
+    border-radius: 5px;
     background-color:rgb(99, 122, 122);
     padding: 10px;
 }
@@ -101,17 +103,17 @@ main{
 
 @media only screen and (max-width:600px){
     *{
-       font-size: 0.7em;
+       font-size: 0.93em;
     }
     #sidebar{
        width: 30%;
     }
     button{
         padding: 4px;
-        font-size: 10px;
+        font-size: 0.8em;
     }
     input{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
    }
    
