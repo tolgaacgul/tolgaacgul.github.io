@@ -96,3 +96,22 @@ main{
     color: rgb(25, 29, 17);
     width:fit-content;
 }
+
+
+
+@media only screen and (max-width:600px){
+    *{
+       font-size: 13px;
+    }
+    #sidebar{
+       width: 40%;
+    }
+    button{
+        padding: 3px;
+        font-size: 12px;
+    }
+    input{
+        font-size: 11px;
+    }
+   }
+   
