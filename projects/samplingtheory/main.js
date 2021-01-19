@@ -5,17 +5,26 @@ var N;
 var n;
 var N_n;
 
-
+function fncHidden(){
+    document.getElementById("idInfo").style.display = "none";
+}
 
 function fncCreatPopulation(){
     kitle = [];
+    var altDeger = 164;
+    var ustDeger = 185;
     N = document.getElementById("idN").value;
     N = Number(N);
     for(i = 0; i<N; i++){
-        var randomSayi = Math.floor(Math.random()*10);
-        kitle.push(randomSayi)
+        var Y_i = Math.random();
+        Y_i *= (ustDeger-altDeger);
+        Y_i = Math.floor(Y_i)+altDeger;
+
+        kitle.push(Y_i);
     }
-    document.getElementById("idKitle").innerHTML = kitle;
+    var idKitle = document.getElementById("idKitle");
+    idKitle.innerHTML = kitle;
+    idKitle.className = "clsKitle"
 }
 
 

@@ -11,6 +11,27 @@ h1{
 p{
     margin: 5px;
 }
+#idInfo{
+    background-color: yellow;
+    color: red;
+    display: flex;
+    align-items: center;
+}
+#idInfo div{
+    margin: 5px;
+}
+.clsExit{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+.clsExit:hover{
+    background-color: rgb(185, 117, 117);
+    cursor: pointer;
+}
+
+
 #middle{
     display: flex;
 }
@@ -53,6 +74,14 @@ main{
 #idUzay{
     background-color:rgb(99, 122, 122);
     padding: 10px;
+}
+.clsKitle{
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: rgb(95, 95, 80);
+    color: rgb(253, 253, 253);
+    width:fit-content;
 }
 .clsOrneklemler{
     position: relative;
