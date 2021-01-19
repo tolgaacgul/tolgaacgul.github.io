@@ -101,17 +101,17 @@ main{
 
 @media only screen and (max-width:600px){
     *{
-       font-size: 13px;
+       font-size: 0.7em;
     }
     #sidebar{
-       width: 40%;
+       width: 30%;
     }
     button{
-        padding: 3px;
-        font-size: 12px;
+        padding: 4px;
+        font-size: 10px;
     }
     input{
-        font-size: 11px;
+        font-size: 0.7em;
     }
    }
    
