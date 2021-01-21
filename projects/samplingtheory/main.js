@@ -62,8 +62,8 @@ function fncSamples(n){
     const clsOrneklemler = document.querySelector(".clsOrneklemler")
     clsOrneklemler.innerHTML = "";
 
-    if(n<1 || n>4){
-        fncDrawSample(1,"Lütfen 1 ile 4 arasında bir n giriniz ki örneklem uzayı hesaplayabilelim!")
+    if(n<1 || n>6){
+        fncDrawSample(1,"Lütfen 1 ile 6 arasında bir n giriniz ki örneklem uzayı hesaplayabilelim!")
     }else{
         if(n == 1){
             for(i=0; i<N; i++){
@@ -110,6 +110,49 @@ function fncSamples(n){
                 
                             fncDrawSample(sayac,orneklem)
                             sayac++;
+                        }
+                    }
+                }
+            }
+        }else if(n == 5){
+            for(i=0; i<N; i++){
+                for(j=i+1; j<N; j++){
+                    for(k=j+1; k<N; k++){
+                        for(m=k+1; m<N; m++){
+                            for(l=m+1; l<N; l++){
+                                var orneklem = [];
+                                orneklem.push(kitle[i]);
+                                orneklem.push(kitle[j]);
+                                orneklem.push(kitle[k]);
+                                orneklem.push(kitle[m]);
+                                orneklem.push(kitle[l]);
+                    
+                                fncDrawSample(sayac,orneklem)
+                                sayac++;
+                            }
+                        }
+                    }
+                }
+            }
+        }else if(n == 6){
+            for(i=0; i<N; i++){
+                for(j=i+1; j<N; j++){
+                    for(k=j+1; k<N; k++){
+                        for(m=k+1; m<N; m++){
+                            for(l=m+1; l<N; l++){
+                                for(t=l+1; t<N; t++){
+                                    var orneklem = [];
+                                    orneklem.push(kitle[i]);
+                                    orneklem.push(kitle[j]);
+                                    orneklem.push(kitle[k]);
+                                    orneklem.push(kitle[m]);
+                                    orneklem.push(kitle[l]);
+                                    orneklem.push(kitle[t]);
+                        
+                                    fncDrawSample(sayac,orneklem)
+                                    sayac++;
+                                }
+                            }
                         }
                     }
                 }
