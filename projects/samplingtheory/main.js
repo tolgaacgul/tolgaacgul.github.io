@@ -174,5 +174,3 @@ function fncDrawSample(sayac,orneklemDizi){
     //birleştir
     clsOrneklemler.appendChild(clsOrneklem);
 }
-
-
