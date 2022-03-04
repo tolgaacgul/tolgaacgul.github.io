@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToDo List</title>
+</head>
+<body class="bg-primary">
+    <h1 class="text-white">To Do App</h1>
+    <div class="container">
+        <div class="row ">
+            <!-- yapacaklarım kapsayıcısı-->
+            <div class="col-lg-4 col-md-6 p-1 px-md-3">
+                <div class="card-working p-2">
+                    <h4 class="text-success my-2">Yapacaklarım</h4>
+                    <!-- not kartlarının kutusu-->
+                    <div class="card-notes">
+                        <!-- card-note lar buraya listelenecek / fncCardNote -->
+                    </div>
+                </div>
+            </div>
+            <!-- yapıyorum kapsayıcısı-->
+            <div class="col-lg-4 col-md-6 p-1 px-md-3">
+                <div class="card-working p-2">
+                    <h4 class="text-success my-2">Yapıyorum</h4>
+                </div>
+            </div>
+            <!-- yaptım kapsayıcısı-->
+            <div class="col-lg-4 col-md-12 p-1 px-md-3">
+                <div class="card-working p-2">
+                    <h4 class="text-success my-2">Yaptım</h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Not ekle buton yeri -->
+    <Button class="note-add btn btn-success">+ Not Ekle </Button>
+    <!-- Popop - Not Ekle -->
+    <div class="popop-container d-none">
+        <div class="popop">
+            <h4>Listenize Ekleme Yapın</h4>
+            <form id="idNotForm" action="post">
+                <input type="text" name="baslik" id="idInputTitle" placeholder="Baslık">
+                <input type="text" name="notunuz" id="idInputNote" placeholder="Not">
+                <br>
+                <button class="btn btn-success" type="submit">Ekle</button>    
+            </form>
+            <!-- iptal et -->
+            <button class="btn-x bg-danger text-white">X</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

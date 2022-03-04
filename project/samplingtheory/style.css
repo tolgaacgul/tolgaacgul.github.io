@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: rgb(255, 255, 255);
+    margin: 15px 5px;
+    border-bottom: 1px solid wheat;
+}
+p{
+    margin: 5px;
+}
+#idInfo{
+    background-color: yellow;
+    color: red;
+    display: flex;
+    align-items: center;
+}
+#idInfo div{
+    margin: 5px;
+}
+.clsExit{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+.clsExit:hover{
+    background-color: rgb(185, 117, 117);
+    cursor: pointer;
+}
+
+
+#middle{
+    display: flex;
+}
+input{
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    padding: 10px;
+    font-size: 16px;
+    color: whitesmoke;
+    background-color: darkslategrey;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    color:white;
+    background-color: rgb(47, 79, 79, 0.8);
+    cursor: pointer;
+}
+#sidebar{
+    padding: 15px;
+    width: 30%;
+    height: 100vh;
+    background-color: #333;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    padding: 15px;
+    width: 70%;
+    height: 100vh;
+    background-color: darkslategrey;
+    color: ghostwhite;
+    position: relative;
+}
+
+#idUzay{
+    border-radius: 5px;
+    background-color:rgb(99, 122, 122);
+    padding: 10px;
+}
+.clsKitle{
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: rgb(95, 95, 80);
+    color: rgb(253, 253, 253);
+    width:fit-content;
+}
+.clsOrneklemler{
+    position: relative;
+    overflow: hidden;
+}
+.clsOrneklem{
+    float: left;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 4px;
+    background-color: yellow;
+    color: rgb(25, 29, 17);
+    width:fit-content;
+}
+
+
+
+@media only screen and (max-width:600px){
+    *{
+       font-size: 0.93em;
+    }
+    #sidebar{
+       width: 30%;
+    }
+    button{
+        padding: 4px;
+        font-size: 0.8em;
+    }
+    input{
+        font-size: 0.8em;
+        padding: 5px 5px;
+    }
+    #sidebar{
+        padding: 3% 1% 3% 1%;
+    }
+    main{
+        padding: 3% 1% 3% 1%;
+    }
+}
+   

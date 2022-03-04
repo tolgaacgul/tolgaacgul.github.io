@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gönye Aracı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <main>
+      <!-- head -->
+      <div class="baslik">
+        <h1>Gönye Hesabı</h1>
+        <p>İnşaat Kalıbı İçin Gönye Programı</p>
+      </div>
+      <!-- pisagor -->
+      <div class="pisagorAlani">
+        <div class="container">
+          <div class="a"><p id="pA">a</p></div>
+          <div class="ucgen"></div>
+          <div class="c"><p id="pC">c</p></div>
+        </div>
+        <div class="b"><p id="pB">b</p></div>
+      </div>
+      <!-- input -->
+      <div class="girdiAlani">
+        <div>Değerleri harflerin konumuna göre girin. Ör: (5.7)</div>
+        <div>
+          <input id="inputA" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="a">
+          <input id="inputB" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="b">
+          <input id="inputC" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="c">
+        </div>
+      </div>
+      <button id="idOk">Hesapla</button>
+      <div class="info">
+        <span>Bu program <i> <b> <a href="https://tolgaacgul.github.io/">tolgaacgul</a> </b> </i> tarafından <b>Sedat Yazar</b>  için yazılmıştır</span>
+      </div>
+    </main>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
