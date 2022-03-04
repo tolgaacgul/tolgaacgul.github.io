@@ -1,6 +1,9 @@
 body{
     background-color: rgb(224, 221, 221);
 }
+.round-50{
+    border-radius: 50%;
+}
 .section-card{
     margin: 5px;
     padding: 15px;
@@ -14,4 +17,47 @@ body{
 }
 .titleSubj{
     font-size: larger;
+}
+.fullScreen{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.proPhoto{
+    margin: auto;
+}
+
+
+
+
+/* Mobil */
+@media only screen and (max-width: 576px) {
+    p {
+      font-size: small;
+    }
+    h3, h2, h1{
+        font-size: medium;
+    }
+    h6, h5, h4{
+        font-size: small;
+    }
+    .section-card{
+        margin: 15px 5px;
+        padding: 15px 0px;
+        background-color: white;
+        color: black;
+        border-radius: 7px;
+        box-shadow: 7px 7px 3px; /* x y blur */
+    }
+}
+
+@media only screen and (max-device-width: 768px) { 
+    p {
+        font-size: small;
+      }
+      h3, h2, h1{
+          font-size: medium;
+      }
+      h6, h5, h4{
+          font-size: small;
+      }
 }

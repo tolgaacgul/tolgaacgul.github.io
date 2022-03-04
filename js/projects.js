@@ -48,18 +48,19 @@ function writeProjects(arr,titleSubj=""){
     arr.forEach(e => {
         idContent.innerHTML += `                  
         <div class="col">
-        <div class="card cardObj">
-          <img src="${e.img}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">
-              <a href="${e.link}" class="nav-link p-0 ">
-                <i class="bi bi-link-45deg"></i>
-                <span>${e.title}</span>
-              </a>
-            </h5>
-            <p class="card-text">${e.description}</p>
+          <div class="card cardObj">
+            <img src="${e.img}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="${e.link}" class="nav-link p-0 ">
+                  <i class="bi bi-link-45deg"></i>
+                  <span>${e.title}</span>
+                </a>
+              </h5>
+              <p class="card-text">${e.description}</p>
+            </div>
           </div>
-        </div>
-      </div>`
+          <br><br>
+        </div>`
     });
 }
