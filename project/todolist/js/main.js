@@ -11,7 +11,6 @@ let arryYapacaklarim = localStorage.getItem("yapacaklarim") ? JSON.parse(localSt
 
 writeDataToList(arryYapacaklarim);
 
-
 /* popop cancel */
 cancelPopop.addEventListener("click", ()=>{
     popop.classList.add("d-none")
@@ -40,26 +39,29 @@ notForm.addEventListener("submit", (event) => {
 })
 /* Notları ekrana yazdır */
 function writeDataToList(dizi){
-    dizi.forEach( (element) => {
+    dizi.forEach( (element, index) => {
         let baslik = element.baslik
         let not = element.not
-        noteCards.innerHTML += fncCardNote(baslik, not)
+        noteCards.innerHTML += fncCardNote(baslik, not, index)
     });
 }
 
 /* not kartının modülü - içerisini doldurur */
-function fncCardNote(baslik, not){
-    return `<div class="card-note p-2 my-2">
-    <h5>${baslik}</h5>
-    <div class="mt-3 mb-2">${not}</div>
-    <div class="box-action d-inline">
-        <button class="action-btn"></button>
-        <button class="action-btn"></button>
-        <button class="action-btn btn-danger"></button>
-    </div>
-</div>`
+function fncCardNote(baslik, not, index){
+    return `
+    <div class="card-note p-2 my-2" cardindex="${index}">
+        <h5>${baslik}</h5>
+        <div class="mt-3 mb-2">${not}</div>
+        <div class="box-action d-inline">
+            <button class="action-btn"></button>
+            <button class="action-btn"></button>
+            <button class="action-btn btn-danger"></button>
+        </div>
+    </div>`
 }
 
 
-// silme işlemi için
-console.log(noteCards.childElementCount)    //eleman sayısını don
+// silme işlemi için,
+function fncDeleteNote(){
+
+}
