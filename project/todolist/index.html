@@ -94,9 +94,15 @@
         <div class="popop">
             <h4>Listenize Ekleme Yapın</h4>
             <form id="idNotForm" action="post">
-                <input type="text" name="baslik" id="idInputTitle" placeholder="Baslık">
-                <input type="text" name="notunuz" id="idInputNote" placeholder="Not">
-                <br>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Konu/Başlık</label>
+                    <input type="text" class="form-control" id="idInputTitle">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Açıklama</label>
+                    <input type="text" class="form-control" id="idInputNote">
+                  </div>
                 <button class="btn btn-success" type="submit">Ekle</button>    
             </form>
             <!-- iptal et -->
