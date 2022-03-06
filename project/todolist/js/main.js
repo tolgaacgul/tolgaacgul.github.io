@@ -25,6 +25,79 @@ let arryYaptim = localStorage.getItem("yaptim") ? JSON.parse(localStorage.getIte
 writeDataToList(arryYapacaklarim);
 console.log(addNoteBox.classList)
 
+
+
+/* not kartının modülü - içerisini doldurur */
+function fncCardNote(baslik, not, index){
+    return `
+    <div class="card-note p-2 my-2">
+    <h5>${baslik}</h5>
+    <div class="mt-3 mb-2">${not}</div>
+    <div class="box-action d-inline">
+        <button class="rmvBtnNote action-btn btn-danger" cardindex="${index}" onclick="removeNote()"></button>
+    </div>
+    <div class="btn-group d-grid d-flex justify-content-end mt-2" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger btn-sm" onclick="btnYapcam()">Yapacağım</button>
+        <button type="button" class="btn btn-warning btn-sm" onclick="btnYapiyorum()">Yapıyorum</button>
+        <button type="button" class="btn btn-success btn-sm" onclick="btnYaptim()">Yaptım</button>
+    </div>
+</div>`
+}
+
+function btnYaptim(){
+    
+}
+function btnYapiyorum(){
+    
+}
+function btnYapcam(){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// notların silme işlemi için,
+function removeNote(){
+    deleteNoteBox.classList.remove("d-none")
+}
+
+
+// kartın silinmesine onay
+function deleteNoteBoxOk(){
+    console.log(cardIndex)
+    let deletedCard = arryYapacaklarim.splice(cardIndex,1)
+    localStorage.setItem("yapacaklarim", JSON.stringify(arryYapacaklarim) )
+    noteCardsWill.innerHTML = ""
+    writeDataToList(arryYapacaklarim);
+    idDeleteNoteBoxClose();
+
+}
+
+
+/* POPOP Pencerelerinin kapanması */
+function idAddNoteBoxClose(){
+    console.log("Not ekleme penceresini kapatıyorusn")
+    addNoteBox.classList.add("d-none")
+}
+function idMoveNoteBoxClose(){
+    console.log("moveNoteBox penceresini kapatıyorusn")
+    moveNoteBox.classList.add("d-none")
+}
+function idDeleteNoteBoxClose(){
+    console.log("deleteNoteBox penceresini kapatıyorusn")
+    deleteNoteBox.classList.add("d-none")
+}
+
+
 /* popop cancel */
 cancelPopop.addEventListener("click", ()=>{
     addNoteBox.classList.add("d-none")
@@ -60,53 +133,36 @@ function writeDataToList(dizi){
     });
 }
 
-/* not kartının modülü - içerisini doldurur */
-function fncCardNote(baslik, not, index){
-    return `
-    <div class="card-note p-2 my-2">
-    <h5>${baslik}</h5>
-    <div class="mt-3 mb-2">${not}</div>
-    <div class="box-action d-inline">
-        <button class="rmvBtnNote action-btn btn-danger" cardindex="${index}" onclick="removeNote()"></button>
-    </div>
-    <div class="btn-group d-grid d-flex justify-content-end mt-2" role="group" aria-label="Basic mixed styles example">
-        <button type="button" class="btn btn-danger btn-sm">Yapacağım</button>
-        <button type="button" class="btn btn-warning btn-sm">Yapıyorum</button>
-        <button type="button" class="btn btn-success btn-sm">Yaptım</button>
-    </div>
-</div>`
-}
-// notların silme işlemi için,
-function removeNote(){
-    deleteNoteBox.classList.remove("d-none")
-}
+// her tıklama kontrol edilir
+window.addEventListener("click", (event) => {
+    // eğer tılklanan rmvBtnNote=> ise cardİndex al
+    if(event.target.classList.contains("rmvBtnNote")){
+        cardIndex = event.target.getAttribute('cardindex')
+    }
+})
 
 
-// kartın silinmesine onay
-function deleteNoteBoxOk(){
-    console.log(cardIndex)
-    let deletedCard = arryYapacaklarim.splice(cardIndex,1)
-    localStorage.setItem("yapacaklarim", JSON.stringify(arryYapacaklarim) )
-    noteCardsWill.innerHTML = ""
-    writeDataToList(arryYapacaklarim);
-    idDeleteNoteBoxClose();
-
-}
 
 
-/* POPOP Pencerelerinin kapanması */
-function idAddNoteBoxClose(){
-    console.log("Not ekleme penceresini kapatıyorusn")
-    addNoteBox.classList.add("d-none")
-}
-function idMoveNoteBoxClose(){
-    console.log("moveNoteBox penceresini kapatıyorusn")
-    moveNoteBox.classList.add("d-none")
-}
-function idDeleteNoteBoxClose(){
-    console.log("deleteNoteBox penceresini kapatıyorusn")
-    deleteNoteBox.classList.add("d-none")
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,11 +181,3 @@ function idDeleteNoteBoxClose(){
 //         //event.target.parentElement.parentElement.remove()
 //     }
 // })
-
-// her tıklama kontrol edilir
-window.addEventListener("click", (event) => {
-    // eğer tılklanan rmvBtnNote=> ise cardİndex al
-    if(event.target.classList.contains("rmvBtnNote")){
-        cardIndex = event.target.getAttribute('cardindex')
-    }
-})
