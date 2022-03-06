@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>ToDo List</title>
 </head>
 <body class="bg-primary">
@@ -17,8 +19,13 @@
                 <div class="card-working p-2">
                     <h4 class="text-success my-2">Yapacaklarım</h4>
                     <!-- not kartlarının kutusu-->
-                    <div class="card-notes">
+                    <div class="card-notes-will">
                         <!-- card-note lar buraya listelenecek / fncCardNote -->
+
+
+
+
+
                     </div>
                 </div>
             </div>
@@ -26,13 +33,20 @@
             <div class="col-lg-4 col-md-6 p-1 px-md-1">
                 <div class="card-working p-2">
                     <h4 class="text-success my-2">Yapıyorum</h4>
+                    <!-- not kartlarının kutusu-->
+                    <div class="card-notes-will">
+                        <!-- card-note lar buraya listelenecek / fncCardNote -->
+                    </div>
                 </div>
             </div>
             <!-- yaptım kapsayıcısı-->
             <div class="col-lg-4 col-md-12 p-1 px-md-1">
                 <div class="card-working p-2">
                     <h4 class="text-success my-2">Yaptım</h4>
-
+                    <!-- not kartlarının kutusu-->
+                    <div class="card-notes-will">
+                        <!-- card-note lar buraya listelenecek / fncCardNote -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,8 +60,37 @@
 
     <!-- Not ekle buton yeri -->
     <Button class="note-add btn btn-success">+ Not Ekle </Button>
+
+    <!-- Aksiyon-Notu-Sil  -->
+    <div id="idDeleteNoteBox" class="popop-container d-none">
+        <div class="popop">
+            <h4>Silme Aksiyonu</h4>
+            <p>Yapacağınız bu işlem ile ... notunu sileceksiniz?</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-danger btn-sm" type="button" onclick="idDeleteNoteBoxClose()">İptal</button>
+                <button class="btn btn-success btn-sm" type="button" onclick="deleteNoteBoxOk()">Evet</button>
+            </div>
+            <!-- iptal et -->
+            <button class="btn-x bg-danger text-white" onclick="idDeleteNoteBoxClose()">X</button>
+        </div>
+    </div>
+
+    <!-- Aksiyon-Taşıma Onay -->
+    <div id="idMoveNoteBox" class="popop-container d-none">
+        <div class="popop">
+            <h4>Not Aksiyonu</h4>
+            <p>Yapacağınız bu işlem ile notu ... noktasına taşıyacaksınız</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-danger btn-sm" type="button">İptal</button>
+                <button class="btn btn-success btn-sm" type="button">Evet</button>
+              </div>
+            <!-- iptal et -->
+            <button class="btn-x bg-danger text-white" onclick="idMoveNoteBoxClose()">X</button>
+        </div>
+    </div>
+
     <!-- Popop - Not Ekle -->
-    <div class="popop-container d-none">
+    <div id="idAddNoteBox" class="popop-container d-none">
         <div class="popop">
             <h4>Listenize Ekleme Yapın</h4>
             <form id="idNotForm" action="post">
@@ -57,9 +100,11 @@
                 <button class="btn btn-success" type="submit">Ekle</button>    
             </form>
             <!-- iptal et -->
-            <button class="btn-x bg-danger text-white">X</button>
+            <button class="btn-x bg-danger text-white" onclick="idAddNoteBoxClose()">X</button>
         </div>
     </div>
+
+    <!-- js DOC -->
     <script src="js/main.js"></script>
 </body>
 </html>
