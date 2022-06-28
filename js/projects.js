@@ -6,6 +6,12 @@ let projects = [
         description : "Seçim anketlerinin daha hızlı ve pratik yapılabileceği web tabanlı uygulama. İsteyen oyunu kullanarak sonuçlara erişebilir.",
         img : "assets/img/sendeoyver.jpg",
         link :  "https://sendeoyver.com"
+    },    
+    {
+      title : "Araç Kiralama",
+      description : "İster müşteriler için aracını kiraya koy, istersen müşteri ol araç kirala. Java ile yazılan proje detayları ve kurup çalıştırmak için bağlantıya tıkla",
+      img : "assets/img/rentacar.png",
+      link : "https://github.com/tolgaacgul/rent_a_car"
     },
     {
         title : "ToDo List With JS",

@@ -1,17 +1,31 @@
+// Not Ekle Kutusu
 let addNoteBox = document.querySelector("#idAddNoteBox");
+// Notu Taşıma Kutusu
 let moveNoteBox = document.querySelector("#idMoveNoteBox");
+// Notu sil Kutusu
 let deleteNoteBox = document.querySelector("#idDeleteNoteBox");
+//Ekle-Taşı-Sil Kutuları için genel kutu yapısı
 let popopCntnr = document.querySelector(".popop-container");
-
-let notForm = document.querySelector("#idNotForm")
-let noteAdd = document.querySelector(".note-add")
-let inputNote = document.querySelector("#idInputNote")
-let inputTitle = document.querySelector("#idInputTitle")
-let noteCardsWill = document.querySelector(".card-notes-will")
-let noteCardsDoing = document.querySelector(".card-notes-doing")
-let noteCardsDone = document.querySelector(".card-notes-done")
-let noteCard = document.querySelector(".card-note")
+// Ekle-Taşı-Sil Kutuları - Aksiyon kutuları nın ekran kapatma sı için dom bilgisi
 let cancelPopop = document.querySelector(".btn-x")
+
+// Eklenek olan notun form yapısı
+let notForm = document.querySelector("#idNotForm")
+// not ekle butonu
+let noteAdd = document.querySelector(".note-add")
+//input-not -- (Not Ekle Kutusundan)
+let inputNote = document.querySelector("#idInputNote")
+//input-title -- (NotEkle Kutusundan)
+let inputTitle = document.querySelector("#idInputTitle")
+// yapıcaklar kısmı - kartlar buraya eklenir
+let noteCardsWill = document.querySelector(".card-notes-will")
+// yapılıyor kısmı - kartlar buraya eklenir
+let noteCardsDoing = document.querySelector(".card-notes-doing")
+// yapıldı kısmı - kartlar buraka eklenir
+let noteCardsDone = document.querySelector(".card-notes-done")
+// eklenecek her bir kartın bilgisi
+let noteCard = document.querySelector(".card-note")
+
 
 let sil = document.querySelector(".action-btn")
 
@@ -27,23 +41,36 @@ console.log(addNoteBox.classList)
 
 
 
-/* not kartının modülü - içerisini doldurur */
+
+// -------------------------- her tıklama kontrol edilir --------------------------
+window.addEventListener("click", (event) => {
+    // eğer tılklanan rmvBtnNote=> ise cardİndex alarak silinecek dizi indexi olarak kullanılır.
+    if(event.target.classList.contains("rmvBtnNote")){
+        cardIndex = event.target.getAttribute('cardindex')
+    }
+})
+
+
+
+
+/**********  Not Kartı tasarımı - içerisini doldurur **********/
 function fncCardNote(baslik, not, index){
     return `
     <div class="card-note p-2 my-2">
-    <h5>${baslik}</h5>
-    <div class="mt-3 mb-2">${not}</div>
-    <div class="box-action d-inline">
-        <button class="rmvBtnNote action-btn btn-danger" cardindex="${index}" onclick="removeNote()"></button>
-    </div>
-    <div class="btn-group d-grid d-flex justify-content-end mt-2" role="group" aria-label="Basic mixed styles example">
-        <button type="button" class="btn btn-danger btn-sm" onclick="btnYapcam()">Yapacağım</button>
-        <button type="button" class="btn btn-warning btn-sm" onclick="btnYapiyorum()">Yapıyorum</button>
-        <button type="button" class="btn btn-success btn-sm" onclick="btnYaptim()">Yaptım</button>
-    </div>
-</div>`
+        <h5>${baslik}</h5>
+        <div class="mt-3 mb-2">${not}</div>
+        <div class="box-action d-inline">
+            <button class="rmvBtnNote action-btn btn-danger" cardindex="${index}" onclick="removeNoteScreen()"></button>
+        </div>
+        <div class="btn-group d-grid d-flex justify-content-end mt-2" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger btn-sm" onclick="btnYapcam()">Yapacağım</button>
+            <button type="button" class="btn btn-warning btn-sm" onclick="btnYapiyorum()">Yapıyorum</button>
+            <button type="button" class="btn btn-success btn-sm" onclick="btnYaptim()">Yaptım</button>
+        </div>
+    </div>`
 }
 
+/**********  Not Kartlarının Alanlar arasında taşaınması **********/
 function btnYaptim(){
     
 }
@@ -65,8 +92,8 @@ function btnYapcam(){
 
 
 
-// notların silme işlemi için,
-function removeNote(){
+// ***** Silinecek olan Notun onayı için ekran açar - Popop açar
+function removeNoteScreen(){
     deleteNoteBox.classList.remove("d-none")
 }
 
@@ -133,13 +160,7 @@ function writeDataToList(dizi){
     });
 }
 
-// her tıklama kontrol edilir
-window.addEventListener("click", (event) => {
-    // eğer tılklanan rmvBtnNote=> ise cardİndex al
-    if(event.target.classList.contains("rmvBtnNote")){
-        cardIndex = event.target.getAttribute('cardindex')
-    }
-})
+
 
 
 
