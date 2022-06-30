@@ -13,12 +13,14 @@ let projects = [
       img : "assets/img/rentacar.png",
       link : "https://github.com/tolgaacgul/rent_a_car"
     },
+    /*
     {
         title : "ToDo List With JS",
         description : "Yapmak istediklerinizin listesini tutabileceğiniz bir app. Yapacaklarım kısmından yapıyorum ya da yaptım kısmına taşıyabilirisiniz.",
         img : "assets/img/todolistjs.jpg",
         link : "../project/todolist/index.html"
     },
+    */
     {
       title : "Hipotenüs Aracı",
       description : "İlgili iki değeri girerek girilmeyen kenarın uzunluğunu bulmak için kullanılabilir.",
