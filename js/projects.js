@@ -29,23 +29,29 @@ let projects = [
     }
 ]
 /* Çalışmalar / Clone Örnekler */
-let working = [
+let theme = [
+  {
+    title : "sendeoyver",  
+    description : "Sendeoyver projesine ait tema",
+    img : "assets/img/sendeoyvertheme.jpg",
+    link : "../theme/sendeoyver/index.html"
+  },
   {
       title : "linkedin clone",  
       description : "Linkedin 'in genel yapısına uygun gelişritilmiş clone",
       img : "assets/img/linkedinclone.jpg",
-      link : "../working/linkedin/index.html"
+      link : "../theme/linkedin/index.html"
   },
   {
     title : "Google clone",  
     description : "Google'in genel yapısına uygun gelişritilmiş clone",
     img : "assets/img/google22clone.jpg",
-    link : "../working/google22/index.html"
+    link : "../theme/google22/index.html"
 }
 ]
 
 writeProjects(projects,"Projects");
-writeProjects(working,"Working / Clone");
+writeProjects(theme,"Themes");
 function writeProjects(arr,titleSubj=""){
     idContent.innerHTML += `
     <div class="col-12 col-sm-12">
