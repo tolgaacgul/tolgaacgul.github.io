@@ -1,0 +1,281 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.w-inf{
+    width: 9999px;
+}
+p,span,h1,h2,h3,h4,h5,h6{
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+
+/* nav- adaylar */
+/* Üst Nav Bar - scrool */
+.head-cities{
+    background-color: rgba(51, 51, 51, 0.9);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px 0px;
+}
+.head-cities .city-rate {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 3px 5px;
+}
+/* .head-cities .city-rate:last-child{
+    border-right: none;
+} */
+.head-cities .city-rate:hover {
+    background-color: #777;
+}
+
+
+
+/* Side-Bar Kısmı */
+/* Total İl Oranları */
+#city-total{
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+
+/* Total aday oyları */
+#candidate-total{
+    border-radius: 10px;
+    margin: 30px 0px 50px 0px;
+    padding: 0px 10px;
+}
+.info-candidate{
+    border: 1px solid black;
+    height: 55px;
+    border-radius: 14px;
+    margin: 10px 0px;
+}
+.info-candidate:hover{
+    background-color: rgba(233, 219, 219, 0.104);
+    cursor: pointer;
+}
+.info-candidate div{
+    float: left;
+}
+.info-candidate .circle-pic{
+    width: 50px;
+    margin: 0px 15px 0px 5px;
+}
+.info-candidate .circle-pic img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Content içi - içerik yani pusula kısmı */
+content{
+    overflow:auto;
+    height: auto;
+}
+content h1{
+    font-size:xx-large;
+}
+.side-bar h3{
+    font-size: large;
+}
+.side-bar{
+    height: 100vh;
+    overflow: auto;
+}
+.side-bar::-webkit-scrollbar{
+    border: none
+}
+/* Pusula */
+.pusula{
+    padding: 30px 0px;
+    overflow: auto;
+    white-space: nowrap;
+}
+.aday{
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 20px 0px;
+    width: 150px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.aday .aday-foto{
+    margin: auto;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.aday .aday-ad{
+    margin: 15px 0px;
+    overflow: auto;
+    font-size: small;
+}
+.aday .aday-check{
+    margin: 15px auto;
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.aday .aday-check:hover{
+    background-color: rgb(242, 214, 214, 34);
+    cursor: pointer;
+    background-image:url(../img/evet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color:rgb(48, 40, 40);
+    opacity:0.6; */
+}
+.secilmis{
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 20px 0px;
+    width: 120px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.secilmis .aday-check{
+    background-image:url(../img/evet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+.aday .yatay-cizgi{
+    margin: auto;
+    border-top: 1px solid black;
+    width: 80%;
+}
+#otherCandidate{
+    width: 100px;
+    height: 39px;
+}
+
+/* popup Kısmı */
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 10;
+    display: none;
+}
+.popup .inner{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 95%;
+    max-width: 369px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border: #333 solid 1px;
+    border-radius: 14px;
+    box-shadow: 5px 10px 20px #888888;
+}
+.popup .aday{
+    margin: 0px;
+    padding: opx;
+}
+.oy-gonder{
+    font-size: smaller;
+}
+/* İptal Butonu */
+.x-cancel{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}
+.x-cancel:hover{
+    cursor: pointer;
+    box-shadow: 5px 10px 20px #888888;
+}
+.x-cancel img{
+    width: 100%;
+}
+.ft-hak{
+    font-size: xx-small;
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+/* Mobil Responsive */
+
+@media only screen and (max-width: 990px){
+    .aday{
+        width: 130px;
+    }
+    .aday .aday-check{
+        width: 80px;
+        height: 80px;
+    }
+    #otherCandidate{
+        height: 39px;
+    }
+    content h1{
+        font-size:x-large;
+    }
+}
+/* Boostrapteki md başlangıcı */
+@media only screen and (max-width: 767px){
+    .side-bar{
+        overflow:visible;
+    }
+}
+
+/* Boostrapteki sm */
+@media only screen and (max-width: 575px){
+    .aday{
+        width: 115px;
+    }
+    .aday .aday-ad{
+        font-size: x-small;
+    }
+    .aday .aday-check{
+        width: 70px;
+        height: 70px;
+    }
+    #otherCandidate{
+        height: 30px;
+    }
+    .side-bar{
+        overflow:visible;
+    }
+
+}
+@media only screen and (max-width: 375px){
+    .oy-gonder{
+        font-size:x-small;
+    }
+}
+
+
+
+@font-face {
+    font-family: ImperialScript;
+    src: url(../font/ImperialScript-Regular.ttf);
+}
+.nav-logo{
+    font-family :'Times New Roman', Times, serif;
+    font-size: 25px;
+}
