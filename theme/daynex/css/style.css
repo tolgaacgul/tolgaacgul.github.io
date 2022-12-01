@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+._bg-primary{
+    background-color: rgba(131, 183, 53, 1);
+}
+._active{
+    color: rgba(131, 183, 53, 1);
+}
+._sabitle{
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+    margin: 0!important;
+}
+._logo{
+    width: 265px;
+}
+._carousel-img-setting{
+    float: right!important;
+}
+._carousel-vh-setting{
+    height: 60vh;
+    min-height: 400px;
+}
+._in-img{
+    height:47px; width:47px;
+
+}
+._font-p{
+    color: #919191;
+}
+._font-h2{
+    color: #333333;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 45px;
+}
+._font-nav-login{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(51, 51, 51,0.6);
+}
+._info-number{
+    height: 16px;
+    width: 16px;
+    background-color: #83B735;
+    position: absolute;
+    top: -12px;
+    right: -8px;
+    border-radius: 50%;
+    color: white;
+}
+._info-number span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0px 0px 0px;
+    font-size: 8px;
+}
+._font-h3{
+    color: #2D2D2D;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 32px;
+}
+._damla{
+    width: 30px!important; 
+    height:30px!important; 
+    border-radius:50% 0 50% 50%!important; 
+}
+@media only screen and (max-width: 992px) {
+    ._logo{
+        width: 179px;
+    }
+    ._carousel-img-setting{
+        float: none;
+        width: 100%;
+        text-align: center;
+        width: 500px!important;
+        
+    }
+    ._carousel-vh-setting{
+        height: 40vh;
+    }
+    ._in-img{
+        height: 30px;
+        width: 30px;
+    }
+    ._font-h2{
+        font-size: 40px;
+    }
+    ._font-h3{
+        font-size: 28px;
+    }
+    ._damla{
+        width: 25px!important; 
+        height:25px!important; 
+    }
+}
+@media only screen and (max-width: 768px) {
+    ._carousel-img-setting{
+        float: none;
+        width: 100%;
+        text-align: center;
+        width: 100%!important;
+        
+    }
+    ._carousel-img-small img{
+        width: 20px;
+        height: 20px;
+    }
+    ._in-img{
+        height: 20px;
+        width: 20px;
+    }
+    ._font-p{
+        font-size: 12px;
+        color: #919191
+    }
+    ._font-h2{
+        font-size: 30px;
+    }
+    ._font-h3{
+        font-size: 22px;
+    }
+    ._damla{
+        width: 20px!important; 
+        height:20px!important; 
+    }
+}

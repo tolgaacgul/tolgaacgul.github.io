@@ -5,169 +5,188 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="fontawesome-free-6.2.1-web/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/style.css">
+
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="_bg-primary py-2">
-        <nav class="navbar navbar-expand-lg text-light py-0">
-            <div class="container-fluid container-xl">
+    <header>
+        <nav class="_bg-primary py-2">
+            <nav class="navbar navbar-expand-lg text-light py-0">
+                <div class="container-fluid container-xl">
+                    <div class="col-12 col-xl-11 m-auto">
+                        <div class="row">
+                            <div class="navbar-collapse" id="navbarText">
+                                <ul class="d-none d-lg-inline navbar-nav me-lg-auto">
+                                    <li class="nav-item list-inline-item border-start ps-2 ">
+                                        <small>
+                                            <small>ENGLISH</small>
+                                            <small><i class="fa-solid fa-chevron-down"></i></small>
+                                        </small>
+                                    </li>
+                                    <li class="nav-item list-inline-item border-start ps-2 ">
+                                        <small>
+                                            <small>COUNTRY</small>
+                                            <small><i class="fa-solid fa-chevron-down"></i></small>
+                                        </small>
+                                    </li>
+                                    <li class="nav-item list-inline-item border-start ps-2 ">
+                                        <small>
+                                            <small>FREE SHIPPING FOR ALL ORDERS OF $150</small>
+                                        </small>
+                                    </li>
+                                </ul>
+            
+                                <div class="text-light text-center me-4">
+                                    <small>
+                                        <i class="fa-brands fa-facebook-f mx-1"></i>
+                                        <i class="fa-brands fa-twitter mx-1"></i>
+                                        <i class="fa-brands fa-instagram mx-1"></i>
+                                        <i class="fa-brands fa-youtube mx-1"></i>
+                                        <i class="fa-brands fa-pinterest mx-1"></i>
+                                    </small>
+                                </div>
+            
+                                <ul class="d-none d-lg-inline navbar-nav">
+                                    <li class="list-inline-item border-start px-2">
+                                        <small>
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <small class="ms-1">NEWSLETTER</small>
+                                        </small>
+                                    </li>
+                                    <li class="list-inline-item border-start px-2">
+                                        <small>
+                                            <small>CONTACT US</small>
+                                        </small>
+                                    </li>
+                                    <li class="list-inline-item border-start border-end px-2">
+                                        <small>
+                                            <small>FAQS</small>
+                                        </small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    
+        <nav>
+            <div class="container-fluid container-xl py-4 my-2">
                 <div class="col-12 col-xl-11 m-auto">
                     <div class="row">
-                        <div class="navbar-collapse" id="navbarText">
-                            <ul class="d-none d-lg-inline navbar-nav me-lg-auto">
-                                <li class="nav-item list-inline-item border-start ps-2 ">
-                                    <small>
-                                        <small>ENGLISH</small>
-                                        <small><i class="fa-solid fa-chevron-down"></i></small>
-                                    </small>
-                                </li>
-                                <li class="nav-item list-inline-item border-start ps-2 ">
-                                    <small>
-                                        <small>COUNTRY</small>
-                                        <small><i class="fa-solid fa-chevron-down"></i></small>
-                                    </small>
-                                </li>
-                                <li class="nav-item list-inline-item border-start ps-2 ">
-                                    <small>
-                                        <small>FREE SHIPPING FOR ALL ORDERS OF $150</small>
-                                    </small>
-                                </li>
-                            </ul>
-        
-                            <div class="text-light text-center me-4">
-                                <small>
-                                    <i class="fa-brands fa-facebook-f mx-1"></i>
-                                    <i class="fa-brands fa-twitter mx-1"></i>
-                                    <i class="fa-brands fa-instagram mx-1"></i>
-                                    <i class="fa-brands fa-youtube mx-1"></i>
-                                    <i class="fa-brands fa-pinterest mx-1"></i>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-inline d-lg-none">
+                                <i class="fa-solid fa-bars"></i>
+                                <small><b>MENU</b></small>
+    
+                            </div>
+                            <div class="me-3 _logo">
+                                <img src="img/wood-logo-dark.svg" class="w-100" alt="">
+                            </div>
+                            <div class="flex-fill d-none d-lg-flex align-items-center">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for products" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+            
+                                    <div class="input-group-text bg-white" style="color: #8e8e8e;">
+                                        <span class="me-2 _font-nav-login">SELECT CATEGORY</span>
+                                        <small><i class="fa-solid fa-chevron-down" style="color: #777"></i></small>
+                                    </div>
+            
+                                    <button class="input-group-text bg-white"  style="color: #8e8e8e" id="basic-addon1">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="ms-3 _font-nav-login">
+                                <div class="d-lg-inline d-none">
+                                    <a href="#" class="text-dark text-decoration-none mx-1">LOGIN / REGISTER</a>
+                                    <i class="fa-solid fa-heart mx-2"></i>
+                                    <i class="fa-sharp fa-solid fa-retweet mx-2" style="position: relative;">
+                                        <div class="_info-number">
+                                            <span>5</span>
+                                        </div>
+                                    </i>
+                                </div>
+                                <div class="d-inline">
+                                    <i class="fa-solid fa-cart-shopping mx-2" style=" position: relative;">
+                                        <div class="_info-number">
+                                            <span>
+                                                2
+                                            </span>
+                                        </div>
+                                    </i>
+                                    <span class="d-none d-lg-inline">  $0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <nav class="border-top border-bottom d-none d-lg-block">
+            <div class="container-fluid container-xl">
+                <div class="row">
+                    <div class="col-12 col-xl-11 m-auto">
+                        <div class="row">
+                            <div class="col-3 py-3 _bg-primary text-white">
+                                <small class="d-flex align-items-center">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <span class="ms-2">
+                                        BROWSE CATEGORIES
+                                    </span>
+            
+                                    <small class="ms-auto"><i class="fa-solid fa-chevron-down"></i></small>
                                 </small>
                             </div>
-        
-                            <ul class="d-none d-lg-inline navbar-nav">
-                                <li class="list-inline-item border-start px-2">
-                                    <small>
-                                        <i class="fa-solid fa-envelope"></i>
-                                        <small class="ms-1">NEWSLETTER</small>
-                                    </small>
-                                </li>
-                                <li class="list-inline-item border-start px-2">
-                                    <small>
-                                        <small>CONTACT US</small>
-                                    </small>
-                                </li>
-                                <li class="list-inline-item border-start border-end px-2">
-                                    <small>
-                                        <small>FAQS</small>
-                                    </small>
-                                </li>
-                            </ul>
+                            <div class="col-9 d-flex align-items-center">
+                                <div class="d-inline small">
+                                    <div class="d-inline px-2 _active">
+                                        <small>HOME</small>
+                                        <small><i class="fa-solid fa-chevron-down"></i></small>
+                                    </div>
+                                    <div class="d-inline px-2">
+                                        <small>SHOP</small>
+                                        <small><i class="fa-solid fa-chevron-down"></i></small>
+                                    </div>
+                                    <div class="d-inline px-2">
+                                        <small>BLOG</small>
+                                        <small><i class="fa-solid fa-chevron-down"></i></small>
+                                    </div>
+                                    <div class="d-inline px-2">
+                                        <small>PAGES</small>
+                                        <small><i class="fa-solid fa-chevron-down"></i></small>
+                                    </div>
+                                    <div class="d-inline px-2">
+                                        <small>ELEMENTS</small>
+                                        <small><i class="fa-solid fa-chevron-down"></i></small>
+                                    </div>
+                                    <div class="d-inline px-2">
+                                        <small>BUY</small>
+                                    </div>
+                                </div>
+                                <div class="ms-auto">
+                                    <small class="px-2 _active">SPECIAL OFFER</small>
+                                    <span class="border"></span>
+                                    <small class="px-2">PURCHASE THEME</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-    <header>
-        <div class="container-fluid container-xl py-4 my-2">
-            <div class="col-12 col-xl-11 m-auto">
-                <div class="row">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <div class="d-inline d-lg-none">
-                            <i class="fa-solid fa-bars"></i>
-                            <small><b>MENU</b></small>
-
-                        </div>
-                        <div class="me-3 _logo">
-                            <img src="wood-logo-dark.svg" class="w-100" alt="">
-                        </div>
-                        <div class="flex-fill d-none d-lg-flex align-items-center">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for products" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-        
-                                <div class="input-group-text bg-white">
-                                    <span class="me-2">SELECT CATEGORY</span>
-                                    <small><i class="fa-solid fa-chevron-down"></i></small>
-                                </div>
-        
-                                <button class="input-group-text bg-white" id="basic-addon1">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="ms-3">
-                            <div class="d-lg-inline d-none">
-                                <a href="#" class="text-dark text-decoration-none">LOGIN/REGISTER</a>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fa-sharp fa-solid fa-retweet"></i>
-                            </div>
-                            <i class="fa-solid fa-cart-shopping"><small class="d-none d-lg-inline">  $0.00</small></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <header class="border-top border-bottom d-none d-lg-block">
-        <div class="container-fluid container-xl">
-            <div class="row">
-                <div class="col-12 col-xl-11 m-auto">
-                    <div class="row">
-                        <div class="col-3 py-3 _bg-primary text-white">
-                            <small class="d-flex align-items-center">
-                                <i class="fa-solid fa-bars"></i>
-                                <span class="ms-2">
-                                    BROWSE CATEGORIES
-                                </span>
-        
-                                <small class="ms-auto"><i class="fa-solid fa-chevron-down"></i></small>
-                            </small>
-                        </div>
-                        <div class="col-9 d-flex align-items-center">
-                            <div class="d-inline small">
-                                <div class="d-inline px-2 _active">
-                                    <small>HOME</small>
-                                    <small><i class="fa-solid fa-chevron-down"></i></small>
-                                </div>
-                                <div class="d-inline px-2">
-                                    <small>SHOP</small>
-                                    <small><i class="fa-solid fa-chevron-down"></i></small>
-                                </div>
-                                <div class="d-inline px-2">
-                                    <small>BLOG</small>
-                                    <small><i class="fa-solid fa-chevron-down"></i></small>
-                                </div>
-                                <div class="d-inline px-2">
-                                    <small>PAGES</small>
-                                    <small><i class="fa-solid fa-chevron-down"></i></small>
-                                </div>
-                                <div class="d-inline px-2">
-                                    <small>ELEMENTS</small>
-                                    <small><i class="fa-solid fa-chevron-down"></i></small>
-                                </div>
-                                <div class="d-inline px-2">
-                                    <small>BUY</small>
-                                </div>
-                            </div>
-                            <div class="ms-auto">
-                                <small class="px-2 _active">SPECIAL OFFER</small>
-                                <span class="border"></span>
-                                <small class="px-2">PURCHASE THEME</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    <!--main üstünde kalacak şekilde -->
     <div class="_sabitle d-none d-lg-block">
         <div class="container-fluid container-xl">
             <div class="row">
@@ -264,23 +283,23 @@
                                         <p class="pb-2 _font-p">Semper vulputate aliquam curae condimentum<br>
                                             quisque gravida fusce convallis arcu cum at. </p>
                                         <div class="d-inline _carousel-img-small">
-                                            <a href="#" id="idImg1" class="pe-1 text-decoration-none">
-                                                <img src="img1.jpeg" alt="" class="_in-img">
+                                            <a href="#" id="idImg1" class="pe-1 text-decoration-none" onclick="change(1)">
+                                                <img src="img/img1.jpeg" alt="" class="_in-img">
                                             </a>
-                                            <a href="#" id="idImg1" class="px-1 text-decoration-none">
-                                                <img src="img1-2.jpeg" alt="" class="_in-img">
+                                            <a href="#" id="idImg2" class="px-1 text-decoration-none" onclick="change(2)">
+                                                <img src="img/img1-2.jpeg" alt="" class="_in-img">
                                             </a>
-                                            <a href="#" id="idImg1" class="px-1 text-decoration-none">
-                                                <img src="img1-3.jpeg" alt="" class="_in-img">
+                                            <a href="#" id="idImg3" class="px-1 text-decoration-none" onclick="change(3)">
+                                                <img src="img/img1-3.jpeg" alt="" class="_in-img">
                                             </a>
-                                            <a href="#" id="idImg1" class="px-1 text-decoration-none">
-                                                <img src="img1-4.jpeg" alt="" class="_in-img">
+                                            <a href="#" id="idImg4" class="px-1 text-decoration-none" onclick="change(3)">
+                                                <img src="img/img1-4.jpeg" alt="" class="_in-img">
                                             </a>
                                         </div>
-                                        <h3 class="pt-3">$199.00</h3>
+                                        <h3 class="pt-3 _font-h3">$199.00</h3>
                                     </div>
                                     <div class="col-5 col-lg-3">
-                                        <img src="img1.jpeg" class="pt-5 float-end _carousel-img-setting" alt="...">
+                                        <img src="img/img1.jpeg" id="idCarouselImg1" class="pt-5 float-end _carousel-img-setting" alt="...">
                                     </div>
                                 </div>
                             </div>
@@ -292,19 +311,19 @@
                                         <h5 class="pb-2 d-flex align-items-center" >
                                             <small class="me-3"> COLOR: </small>
                                             <div class="d-flex">
-                                                <div class="d-flex mx-1" style="width: 35px; height:35px; border-radius:50% 0 50% 50%; background-color: #2f9393;"></div>
-                                                <div class="d-flex mx-1" style="width: 35px; height:35px; border-radius:50% 0 50% 50%; background-color: #CD4441;"></div>
-                                                <div class="d-flex mx-1" style="width: 35px; height:35px; border-radius:50% 0 50% 50%; background-color: #ECA141"></div>
+                                                <div class="d-flex mx-1 _damla" style="background-color: #2f9393;"></div>
+                                                <div class="d-flex mx-1 _damla" style="background-color: #CD4441;"></div>
+                                                <div class="d-flex mx-1 _damla" style="background-color: #ECA141"></div>
                                             </div>
                                         </h5>
                                         <p class="_font-p">
                                             Semper vulputate aliquam curae condimentum <br> quisque gravida fusce convallis arcu cum at. 
                                         </p>
 
-                                        <h3 class="pt-3">Only $99.00</h3>
+                                        <h3 class="pt-3 _font-h3">Only $99.00</h3>
                                     </div>
                                     <div class="col-5 col-lg-3">
-                                        <img src="img2.jpeg" class="pt-5 float-end _carousel-img-setting" alt="...">
+                                        <img src="img/img2.jpeg" class="pt-5 float-end _carousel-img-setting" alt="...">
                                     </div>
                                 </div>
                             </div>
@@ -319,23 +338,23 @@
                                             quisque gravida fusce convallis arcu cum at.                                                                 
                                         </p>
 
-                                        <h3 class="pt-3">Only $99.00</h3>
+                                        <h3 class="_font-h3" style="color: #83B735;">$999.00</h3>
                                     </div>
                                     <div class="col-5 col-lg-5">
-                                        <img src="img3.jpeg" class="pt-5 float-end _carousel-img-setting" alt="...">
+                                        <img src="img/img3.jpeg" class="pt-5 float-end _carousel-img-setting" alt="...">
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- rigt left button-->
-                        <button class="justify-content-start carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 999;">
+                        <button class="justify-content-start carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 2;">
                             <span class="text-dark bg-white p-2 px-3" aria-hidden="true">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="justify-content-end carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 999;">
+                        <button class="justify-content-end carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 2;">
                             <span class="text-dark bg-white p-2 px-3" aria-hidden="true">
                                 <i class="fa-solid fa-chevron-right"></i>
                             </span>
@@ -349,8 +368,10 @@
 
 
 
-
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!--custom js-->
+    <script src="js/main.js"></script>
+    <!--bundle js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
