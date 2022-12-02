@@ -31,6 +31,12 @@ let projects = [
 /* Çalışmalar / Clone Örnekler */
 let theme = [
   {
+    title : "WoodMart Page Clone",  
+    description : "This is a theme of WoodMart",
+    img : "assets/img/woodmart.jpg",
+    link : "../theme/woodmart/index.html"
+  },
+  {
     title : "sendeoyver",  
     description : "Sendeoyver projesine ait tema",
     img : "assets/img/sendeoyvertheme.jpg",
