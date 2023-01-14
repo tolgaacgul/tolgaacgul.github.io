@@ -13,6 +13,12 @@ let projects = [
       img : "assets/img/rentacar.png",
       link : "https://github.com/tolgaacgul/rent_a_car"
     },
+    {
+      title : "Basic-ToDo List",  
+      description : "Basic have process of add, remove and done/don't done",
+      img : "assets/img/todolistjs.jpg",
+      link : "../project/basic-todolist/index.html"
+    },
     /*
     {
         title : "ToDo List With JS",
