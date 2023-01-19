@@ -19,6 +19,12 @@ let projects = [
       img : "assets/img/todolistjs.jpg",
       link : "../project/basic-todolist/index.html"
     },
+    {
+      title : "Restoran Menu",
+      description : "Object | Json verisi ile dinamik bir restoran menüsü.",
+      img : "assets/img/restoran-menu.png",
+      link : "../project/restoran-menu/index.html"
+    },
     /*
     {
         title : "ToDo List With JS",
