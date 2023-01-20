@@ -19,12 +19,6 @@ let projects = [
       img : "assets/img/todolistjs.jpg",
       link : "../project/basic-todolist/index.html"
     },
-    {
-      title : "Restoran Menu",
-      description : "Object | Json verisi ile dinamik bir restoran menüsü.",
-      img : "assets/img/restoran-menu.png",
-      link : "../project/restoran-menu/index.html"
-    },
     /*
     {
         title : "ToDo List With JS",
@@ -47,6 +41,12 @@ let theme = [
     description : "This is a theme of WoodMart",
     img : "assets/img/woodmart.jpg",
     link : "../theme/woodmart/index.html"
+  },   
+  {
+    title : "Restoran Menu",
+    description : "Object | Json verisi ile dinamik bir restoran menüsü.",
+    img : "assets/img/restoran-menu.png",
+    link : "../theme/restoran-menu/index.html"
   },
   {
     title : "sendeoyver",  
