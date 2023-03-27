@@ -139,6 +139,9 @@ body {
 .nav-menu .wrapper .nav-links li a.active {
     color: #FFB800;
 }
+.nav-menu .wrapper .nav-links .dropdown-links li a.active {
+    background-color: #FFB800;
+}
 
 /*  Sub Menu İçin aşağı doğru Ok    
 .nav-menu .wrapper .nav-links li.sub-links>a:after {
@@ -354,7 +357,7 @@ main {
 .galeri img {
     border-radius: 43px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     overflow: hidden;
 }
 
