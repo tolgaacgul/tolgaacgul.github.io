@@ -183,10 +183,6 @@ body {
     padding: 12px 0 12px 35px;
 }
 
-.nav-menu .wrapper .nav-links .dropdown-links li:first-child {
-    padding: 0px 0 12px 35px;
-}
-
 .nav-menu .wrapper .nav-links .dropdown-links li:last-child {
     border-bottom: none
 }
@@ -238,7 +234,7 @@ main {
 }
 
 .contact {
-    width: 1050px;
+    width: 100%;
     height: auto;
     padding: 50px 100px 20px 100px;
     background: #D9D9D9;
@@ -246,7 +242,7 @@ main {
     border-radius: 53px;
 }
 
-table {
+.contact table {
     width: 100%;
     font-family: 'Aleo';
     font-style: normal;
@@ -255,7 +251,7 @@ table {
     line-height: 43px;
 }
 
-table a {
+.contact table a {
     color: #000000;
     text-decoration: none;
 }
@@ -383,17 +379,24 @@ table a {
 
 
 @media only screen and (max-width: 1240px) {
-    .nav-links{
+    .nav-links {
         width: 600px !important;
     }
-    .nav-menu .wrapper .nav-links li a{
+
+    .nav-menu .wrapper .nav-links li a {
         font-size: 18px !important;
     }
 }
+
 @media only screen and (max-width: 990px) {
-    .nav-menu{
+    p {
+        font-size: 24px !important;
+    }
+
+    .nav-menu {
         width: 100% !important;
     }
+
     .wrapper {
         flex-direction: column;
         height: 200px;
@@ -411,29 +414,155 @@ table a {
         width: 100px;
         margin-right: 0px;
     }
-    .nav-links{
+
+    .nav-links {
         justify-content: space-around !important;
         width: 100% !important;
         border-radius: 0px !important;
         padding: 25px !important;
     }
-    .nav-menu .wrapper .nav-links li a{
+
+    .nav-menu .wrapper .nav-links li a {
         font-size: 16px !important;
     }
 
-    .in-text{
+    .in-text {
         width: 100%;
         padding: 10px 10px !important;
     }
+
+    .nav-menu .wrapper .nav-links .dropdown-links {
+        top: 44px;
+        left: -75px;
+        padding: 12px 22px;
+        width: 350px !important;
+        height: auto;
+        background-color: #D9D9D9;
+        border-radius: 45px;
+    }
+
+    .nav-menu .wrapper .nav-links .dropdown-links li {
+        border-bottom: 2px solid #8A8A8A;
+        padding: 6px 0 6px 18px;
+    }
+
+
+
+    /** İletişim(contact) **/
+    .contact {
+        padding: 25px 50px 10px 50px;
+        border-radius: 34px;
+
+    }
+
+    .contact table {
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+
+    /** Ürünler **/
+
+    .row .urun {
+        margin: 4px;
+        height: auto;
+        padding: 0px;
+    }
+    /*
+    .urun {
+        width: 32%;
+        height: auto;
+        padding: 0 ;
+    }
+    .urun-text{
+        font-size: 20px !important;
+    }
 }
+
+@media only screen and (max-width: 710px) {
+
+    /** İletişim(contact) **/
+    .contact table {
+        font-size: 22px;
+        line-height: 43px;
+    }
+
+    .contact .adress table p {
+        font-size: 22px !important;
+    }
+
+    .adress {
+        margin-top: 40px;
+    }
+    .urun-text{
+        font-size: 16px !important;
+    }
+
+    /** Galeri **/
+    .galeri {
+        border-radius: 8px !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0px 4px;
+    }
+    /* galeri clasında border radius ile eş*/
+    .galeri img {
+        border-radius: 8px !important;
+    }
+}
+
 @media only screen and (max-width: 450px) {
-    .nav-menu .wrapper .nav-links li a{
+    .nav-menu .wrapper .nav-links .dropdown-links {
+        width: 250px !important;
+        padding: 8px 14px;
+    }
+
+    .nav-menu .wrapper .nav-links li a {
         font-size: 12px !important;
     }
-    p{
+
+    p {
         font-size: 18px !important;
 
         font-weight: 300;
         line-height: normal !important;
+    }
+
+    /** İletişim(contact) **/
+    .contact {
+        padding: 24px 10px 24px 10px;
+        border-radius: 18px;
+    }
+
+    .contact table {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .adress {
+        margin-top: 20px;
+    }
+
+
+
+    /** Ürünler **/
+    .row .urun {
+        width: 45% !important;
+    }
+    .urun-text{
+        font-size: 12px !important;
+    }
+
+    /** Galeri **/
+    .galeri {
+        border-radius: 8px !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0px 4px;
+    }
+    
+    /* galeri clasında border radius ile eş*/
+    .galeri img {
+        border-radius: 8px !important;
     }
 }
