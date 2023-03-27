@@ -139,7 +139,7 @@ body {
 .nav-menu .wrapper .nav-links li a.active {
     color: #FFB800;
 }
-.nav-menu .wrapper .nav-links .dropdown-links li a.active {
+.nav-menu .wrapper .nav-links .dropdown-links li.active {
     background-color: #FFB800;
 }
 
