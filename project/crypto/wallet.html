@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maris Crypto</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Poppins Font -->
+
+</head>
+
+<body>
+
+
+
+    <main class="main">
+
+        <div class="head-navigation d-flex justify-content-start px-2 " style="height: 70px;">
+            <a href="#" class="text-black" >
+                <img src="assets/img/arrow-ios-back.svg" alt="">
+            </a>
+        </div>
+
+        <div class="banner banner-wall">
+            <div class="head-title">
+                Açıklama
+            </div>
+        </div>
+
+        <form class="">
+            <div class="form-group">
+                <label for="address">Address</label>
+                <div class="input-group">
+                    <input type="text" id="address" placeholder="Press and Hold to Paste">
+                    <a href="javascript:void(0);" id="openCamera" style="margin-top: 5px;">
+                        <img src="assets/img/scanner.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="network">Network
+                    <a href="#" class="text-primary">
+                        <i class="fa fa-info-circle info-icon"></i>
+                    </a>
+                </label>
+                <div class="input-group">
+                    <input type="text" id="network" placeholder="Choose Network">
+
+                    <a href="#" style="margin-top: 5px;">
+                        <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/img/down-blue.svg" alt="">
+                    </a>
+
+
+
+
+                    <!-- Trigger Button 1
+                    <button type="button" class="btn btn-primary" >
+                        Open Pop-up
+                    </button>
+                    -->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Withdrawal Amount
+                    <a href="#" class="text-primary">
+                        <i class="fa fa-info-circle info-icon"></i>
+                    </a>
+                </label>
+                <div class="input-group">
+                    <input type="text" id="amount" placeholder="Minimum 0">
+                    <a href="#" class="bold ms-1 text-decoration-none" style="margin-top: 5px;">MAX</a>
+                </div>
+            </div>
+
+            <div class="small-text">
+                <span>Available for use</span>
+                <span>
+                    <!--<span>0,05434 USDT</span>
+                    <img src="assets/img/down-black.svg" alt="">
+                    -->
+                </span>
+            </div>
+
+            <button class="send-button bg-color-primary mt-4 mb-5">
+                <span>Send</span>
+                <img src="assets/img/send-buton.svg" alt="Send Icon">
+            </button>
+        </form>
+
+
+
+
+        <div>
+            <h2 class="bold">Transaction History</h2>
+            <div class="transaction-container bg-color-black">
+                <div class="transaction-header">
+                    <div>Date</div>
+                    <div>Coin</div>
+                    <div>Sum</div>
+                    <div>Type</div>
+                    <div>Status</div>
+                </div>
+                <div class="transaction-row">
+                    <div class="date">
+                        <div class="font-i">2024-07-08</div>
+                        <div class="font-i">12:34:56</div>
+                    </div>
+                    <div class="coin"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg"
+                            alt="Coin"></div>
+                    <div>34.5</div>
+                    <div>Send</div>
+                    <div class="status">
+                        <img src="assets/img/verify-icon.svg" alt="Status">
+                    </div>
+                </div>
+                <!-- Aynı formatta ek satırlar -->
+                <div class="transaction-row">
+                    <div class="date">
+                        <div class="font-i">2024-07-07</div>
+                        <div class="font-i">11:22:33</div>
+                    </div>
+                    <div class="coin"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg"
+                            alt="Coin"></div>
+                    <div>45.2</div>
+                    <div>Send</div>
+                    <div class="status">
+                        <img src="assets/img/verify-icon.svg" alt="Status">
+                    </div>
+                </div>
+                <div class="transaction-row">
+                    <div class="date">
+                        <div class="font-i">2024-07-06</div>
+                        <div class="font-i">10:11:22</div>
+                    </div>
+                    <div class="coin"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg"
+                            alt="Coin"></div>
+                    <div>56.7</div>
+                    <div>Send</div>
+                    <div class="status">
+                        <img src="assets/img/verify-icon.svg" alt="Status">
+                    </div>
+                </div>
+                <div class="transaction-row">
+                    <div class="date">
+                        <div class="font-i">2024-07-05</div>
+                        <div class="font-i">09:08:07</div>
+                    </div>
+                    <div class="coin"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg"
+                            alt="Coin"></div>
+                    <div>67.8</div>
+                    <div>Send</div>
+                    <div class="status">
+                        <img src="assets/img/verify-icon.svg" alt="Status">
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-nav mt-3" style="text-align: center;">
+                <a href="#" class="text-black">
+                    <i class="fa-solid fa-caret-left"></i>
+                </a>
+                <span style="margin: 0 10px;">4</span>
+                <a href="#" class="text-black">
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="space-for-footer"></div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title mx-auto" id="exampleModalLabel">Modal Title</h5>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-around">
+                    <a href="#" class="btn btn-withdraw">Withdraw</a>
+
+                    <!-- Arayı Böl
+                <div class="btn-divider"></div>
+                -->
+                    <a href="#" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Camera Görüntüsü -->
+
+    <div id="overlay"></div>
+    <div id="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <video id="video" autoplay></video>
+    </div>
+    <!-- Camera Görüntüsü -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="item">
+            <a href="swap.html">
+                <i class="fas fa-exchange-alt"></i>
+                <div>Swap</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="wallet.html">
+                <i class="fas fa-wallet"></i>
+                <div>Wallet</div>
+            </a>
+        </div>
+        <div class="item item-home">
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+        <div class="item">
+            <a href="task.html">
+                <i class="fas fa-tasks"></i>
+                <div>Task</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="friends.html">
+                <i class="fas fa-users"></i>
+                <div>Friends</div>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

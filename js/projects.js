@@ -8,6 +8,12 @@ let projects = [
     link: "https://sendeoyver.com"
   },
   {
+    title: "Crypto Page",
+    description: "Figma ile verilen tasarımı resposive tasarıma uygun bir şekilde kodlandı. Yalnızca mobil için",
+    img: "assets/img/crypto.jpg",
+    link: "../project/crypto/index.html"
+  },
+  {
     title: "tepetas.com",
     description: "Figma ile verilen tasarımı resposive tasarıma uygun bir şekilde kodlandı. CSS ve HTML kullanılmıştır.",
     img: "assets/img/bionluk1.jpg",

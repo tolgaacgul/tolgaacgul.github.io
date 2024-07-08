@@ -1,0 +1,1146 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* GENEL KULLANILABİLİR CSS*/
+.font-i {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.head-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-align-s {
+    text-align: left !important;
+}
+
+.text-primary {
+    color: #196FE0 !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.text-lightwhite {
+    color: rgb(203, 203, 203) !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-0 {
+    margin-top: 0px !important;
+}
+
+.border-color-primary {
+    border-color: #196FE0 !important;
+}
+
+.bg-color-primary {
+    background-color: #196FE0 !important;
+}
+
+.bg-color-white {
+    background-color: #ffffff !important;
+}
+
+.mt-70px {
+    margin-top: 70px;
+}
+
+.bg-color-black {
+    background-color: black !important;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8EEF7;
+}
+
+
+
+
+/*FOOTER*/
+.footer {
+    background-color: black;
+    padding: 0px 15px;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    max-height: 70px;
+    align-items: center;
+    z-index: 1000;
+    /* Üstte görünmesi için */
+
+    position: fixed;
+    bottom: 30px;
+    height: 60px;
+    width: 96%;
+
+}
+
+.footer .item {
+    text-align: center;
+    flex: 1;
+}
+
+.footer .item a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .item a:active i,
+.footer .item a:focus i {
+    color: #196FE0;
+}
+
+.footer .item-home a:active i,
+.footer .item-home a:focus i {
+    color: #196FE0;
+    border: 2px solid #196FE0;
+}
+
+.footer .item a:active,
+.footer .item a:focus {
+    color: #196FE0;
+}
+
+.footer .item {
+    font-size: 15px;
+}
+
+.footer .item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer .item-home {
+    position: relative;
+}
+
+.footer .item-home i {
+    font-size: 35px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #196FE0;
+    color: #196FE0;
+    position: sticky;
+}
+
+.space-for-footer {
+    padding: 60px 0;
+    margin: 0px 0;
+}
+
+
+.main {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.index-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #010011, rgb(4, 4, 47));
+    padding: 20px 0 0 0;
+    text-align: center;
+    /* Metni ortalamak için */
+}
+
+/*TASK*/
+.banner {
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 24px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    /* icon genişliğin yarısı kadar kaydırıyor */
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    margin-top: 40px;
+    /* İconun yerleşimi için */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #333;
+}
+
+.text-align-s {
+    text-align: left !important;
+}
+
+.mt-0 {
+    margin-top: 0px !important;
+}
+
+
+/* içerik yazıları için */
+
+
+
+
+.news-bar {
+    margin: 10px 0;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 14px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-icon {
+    flex: 0 0 auto;
+    margin-right: 15px;
+}
+
+.news-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px
+}
+
+.news-bar-img {
+    margin: 10px 0;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 14px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-bar-img div {
+    padding: 0 15px 0 0;
+}
+
+.news-bar-img .news-img img {
+    width: 80px;
+    border-radius: 10px;
+    display: block;
+    /* Resmi blok element olarak ayarlar */
+    max-width: 100%;
+    /* Maksimum genişlik ayarı */
+    height: auto;
+    /* Yüksekliği otomatik ayarlar */
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container .main-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-container .sub-text {
+    font-size: 14px;
+}
+
+.button-container {
+    flex: 0 0 auto;
+}
+
+.button-container a i {
+    font-size: 24px;
+    color: white;
+    background-color: #196FE0;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.button-container a img {
+    width: 60px;
+    font-size: 30px;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.button-container .btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-container .btn:hover {
+    background-color: #333;
+}
+
+/* frinds sayfası için css */
+
+
+.invite-box {
+    margin-top: 10px;
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.link-text {
+    flex: 1;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+.copy-icon {
+    flex: 0 0 auto;
+    color: white;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.copy-icon i {
+    font-size: 24px;
+}
+
+.copy-icon:hover {
+    color: #f0d7d7;
+}
+
+.bg-color-black .title {
+    color: white;
+}
+
+/*NAME MISSIONS*/
+
+.info-box {
+    /* Kutunun dış kenar rengi */
+    border-radius: 18px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.info-box-head .info-item {
+    padding: 10px 0;
+
+}
+
+.info-item {
+    flex: 1;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box-head .info-item:not(:last-child)::after {
+    background-color: #ffffff9a !important;
+}
+
+.info-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 0;
+    width: 2px;
+    background-color: #4444449a;
+    /* Ayrıştırıcı çizginin rengi */
+}
+
+.info-item .main-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-item .sub-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+/*INDEX PAGE*/
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.rotating-container {
+    position: relative;
+    width: 300px;
+    /* GIF genişliği */
+    height: 300px;
+    /* GIF yüksekliği */
+}
+
+.rotating-gif {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100px;
+    /* Logonun genişliği */
+    height: 100px;
+    /* Logonun yüksekliği */
+    border: 4px solid white;
+    border-radius: 50%;
+    /* Daire yapar */
+    box-shadow: #196FE0;
+    box-shadow: 0 0 35px rgba(0, 123, 255, 0.8), 0 0 30px rgba(0, 123, 255, 0.6);
+
+}
+
+.placeholder {
+    font-size: 24px;
+    color: #555;
+}
+
+/*INDEX PAGE 2. kısım*/
+.section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-container {
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.gas-prace {
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    margin: 20px 0;
+}
+
+.gas-prace .text {
+    font-weight: bold;
+}
+
+.gas-prace i {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+}
+
+.custom-logo {
+    width: 40px;
+    /* Logonun genişliği */
+    height: 40px;
+    /* Logonun yüksekliği */
+    margin: 0 10px;
+}
+
+.custom-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.price-info {
+    margin: 10px 0 0 0;
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 20px;
+}
+
+/*INDEX BUTONLAR*/
+.index-buttons {
+    padding: 30px 0 0 0;
+    width: 100%;
+}
+
+.boost-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    padding: 10px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    /* Anchor tags için */
+    margin: 10px 10px;
+}
+
+.boost-button:hover {
+    background-color: #0056b3;
+}
+
+.boost-button i {
+    margin-left: 8px;
+    /* Yazı ile ikon arasında boşluk */
+}
+
+
+
+/* Modal 1*/
+.modal {
+    padding: 0 60px;
+    background-color: #9b7979dc;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333 !important;
+    padding: 50px 0 !important;
+}
+
+.btn-divider {
+    border: 1px solid #dee2e6 !important;
+    height: 30px;
+}
+
+.modal-footer a {
+    font-size: 20px !important;
+    font-weight: bold;
+    margin: 5px 20px !important;
+}
+
+.modal-footer {
+    padding: 1px !important;
+}
+
+.modal-footer .btn {
+    margin: 0 10px;
+}
+
+.modal-footer .btn+.btn-divider::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #dee2e6;
+    margin: 0 10px;
+}
+
+.modal-content {
+    border-radius: 20px !important;
+}
+
+.btn-withdraw {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-withdraw:hover {
+    background-color: #0056b3;
+}
+
+.btn-cancel {
+    color: #007bff;
+    background-color: white;
+    border: 1px solid #007bff;
+}
+
+.btn-cancel:hover {
+    background-color: #e7f3ff;
+}
+
+.btn-divider {
+    position: relative;
+}
+
+.btn-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 1px;
+    height: 100%;
+    background-color: #dee2e6;
+    transform: translateY(-50%);
+}
+
+/* MODAL 2*/
+.model-two-header {
+    padding: 0 !important;
+}
+
+.crypto-section {
+    padding: 15px;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.crypto-section img {
+    margin: 0 0 0 20px !important;
+}
+
+.crypto-section span {
+    margin: 0 20px 0 0px !important;
+}
+
+.crypto-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.crypto-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.crypto-amount {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*3.modal*/
+
+.details-box {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.details-row:last-of-type {
+    border-bottom: none;
+}
+
+.details-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-left: 20px !important;
+}
+
+.details-item {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.details-amount {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.final-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.qr-code {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+}
+
+.hash-code {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*WALLET */
+.banner-wall {
+    border-radius: 10px;
+}
+
+/*Wallet Form*/
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #fff;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+    padding-right: 20px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.input-group i {
+    margin-left: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+.info-icon {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button i {
+    margin-left: 5px;
+}
+
+.small-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.max-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.send-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
+}
+
+.send-button img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/*WALLET Coin History */
+.transaction-container {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+    row-gap: 10px;
+    grid-template-rows: repeat(0, auto) min-content;
+    /* Her satırdan sonra çizgi */
+    border-collapse: collapse;
+    text-align: center;
+    padding: 20px 8px;
+    color: white;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.transaction-header,
+.transaction-row {
+    display: contents;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0 !important;
+}
+
+.transaction-header {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.transaction-row {
+    border-bottom: 1px solid #fff !important;
+}
+
+.transaction-row>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date>div {
+    margin: 2px 0;
+}
+
+.coin img,
+.status img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+.centered-line {
+    text-align: center;
+    font-size: 240px;
+    margin: 20px 0;
+}
+
+.page-nav span {
+    background-color: #010011;
+    color: white;
+    padding: 4px 5px 5px 5px;
+    border-radius: 3px;
+}
+
+/*SWAP PAGE */
+
+.swap-logo {
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    /* Mavi ışık saçar gibi gölge */
+}
+
+.swap-logo img {
+    display: block;
+    width: 60px;
+    /* Logonuzun genişliği */
+    height: 60px;
+}
+
+.swap-content {
+    color: black;
+    font-size: 18px;
+    /* Yazının boyutu */
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swap-value {
+    font-size: 35px;
+    /* 150 değerinin boyutu */
+    font-weight: bold;
+}
+
+/*Convert coin kısmı*/
+.tr-3 {
+    border: 1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.be-black {
+    border-right: 1px solid #010011 !important;
+}
+
+.bg-color-black {
+    background-color: #010011;
+}
+
+.convert-box {
+    background: linear-gradient(to bottom right, #010011, #196FE0);
+    padding: 25px !important;
+    border-radius: 14px;
+}
+
+/*BITCOIN LİSTELEMELERİ*/
+.bitcoin-box {
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.78);
+    /* Sağ ve aşağı doğru gölgelendirme */
+    background-color: #ffffff;
+    /* Beyaz arka plan */
+    margin: auto;
+    /* Ortala */
+    width: 95%;
+}
+
+.bitcoin-item {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* Satırlar arası boşluk */
+}
+
+.bitcoin-logo {
+    width: 30px;
+    /* Logo boyutu */
+}
+
+.bitcoin-text {
+    font-weight: bold;
+}
+
+.bitcoin-line {
+    border-bottom: 1px solid #000000;
+    /* Siyah çizgi */
+    margin-bottom: 10px;
+    /* Çizgiler arası boşluk */
+}
+
+.font-m {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*Kamera için*/
+/* Modal stil */
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+#video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Kapama butonu stil */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Arka plan */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/*Kamera için*/
+
+/* media <= 390 px*/
+@media (max-width: 390px) {
+    .swap-content {
+        color: black;
+        font-size: 14px;
+        /* Yazının boyutu */
+        font-weight: bold;
+    }
+
+    .swap-value {
+        font-size: 25px;
+        /* 150 değerinin boyutu */
+        font-weight: bold;
+    }
+
+    .tlg-convert-text-type {
+        font-size: 12px !important;
+    }
+
+    .bitcoin-text {
+        font-size: 14px;
+    }
+
+    .bitcoin-box {
+        padding: 15px;
+    }
+
+    .font-m {
+        font-size: 16px;
+    }
+
+    .text-container .main-text {
+        font-size: 14px;
+    }
+
+    .button-container .btn {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    .news-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .news-bar {
+        padding: 10px 15px;
+    }
+
+    .button-container a img {
+        width: 50px;
+        padding: 8px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .link-text {
+        font-size: 12px;
+    }
+
+    .invite-box {
+        padding: 5px 10px;
+    }
+    .banner p {
+        font-size: 12px;
+    }
+    .info-content .info-item .main-text{
+        font-size: 14px;
+    }
+    .info-content .info-item .sub-text{
+        font-size: 10px;
+    }
+}
