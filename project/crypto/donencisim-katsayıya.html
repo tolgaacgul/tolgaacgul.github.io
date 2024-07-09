@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Hız Ayarlama</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .rotate-container {
+            display: inline-block;
+            /* Döndürülecek resmin etrafına bir kutu ekler */
+            position: relative;
+            /* Döndürme için temel pozisyonu ayarlar */
+            animation: rotate-image 4s linear infinite;
+            /* 4 saniyede bir dönen animasyon */
+        }
+
+        @keyframes rotate-image {
+            from {
+                transform: rotate(0deg);
+                /* 0 derece başlangıç noktası */
+            }
+
+            to {
+                transform: rotate(360deg);
+                /* 360 derece tam dönme */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate-container">
+        <img src="path/to/your/image.jpg" alt="Dönen Resim">
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -21,7 +21,7 @@
 
     <main class="main">
         <div class="head-navigation  d-flex justify-content-start px-2 " style="height: 70px;">
-            <a href="#" class="text-black" >
+            <a href="#" class="text-black">
                 <img src="assets/img/arrow-ios-back.svg" alt="">
             </a>
         </div>
@@ -37,32 +37,47 @@
                 </div>
                 <div class="col-9 text-center d-flex align-items-center flex-column justify-content-center">
                     <span class="swap-content">Total Maris Coins Mined </span>
-                    <span class="swap-value">150</span>
+                    <span class="swap-value">150.043</span>
                 </div>
             </div>
         </div>
 
         <div class="convert-box mt-5 container-fluid">
             <div class="row text-white">
-                <div class="col-12 d-flex align-items-center"
-                style="font-size: 22px;">
+                <div class="col-12 d-flex align-items-center" style="font-size: 22px;">
                     <span>Convert Coin</span>
                     <i class="fas fa-exchange-alt swap-icon ms-2"></i>
                 </div>
             </div>
             <div class="row mt-5 bg-color-white tr-3">
-                <div class="pb-2 pt-2 col-4 text-center be-black d-flex justify-content-center align-items-center">
-                    <span  class="me-2 tlg-convert-text-type">Choose Type</span>
+                <div class="choose-type pb-2 pt-2 px-1 col-4 text-center be-black d-flex justify-content-center align-items-center"
+                    data-bs-toggle="modal" data-bs-target="#model-four">
+                    <span class="me-2 tlg-convert-text-type bold">Choose Type</span>
                     <i class="fas fa-angle-down arrow-icon"></i>
                 </div>
-                <div class="pb-2 pt-2 d-flex justify-content-center align-items-center col-4 text-center border-end">
-                    <img width="30px;" class="me-2" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Coin">
-                    <span class="font-m tlg-convert-text-type">1 BTC</span>
+
+
+
+                <div class="p-1 d-flex justify-content-center align-items-center col-4 text-center border-end">
+                    <div class="maris-coin-container">
+                        <img class="maris-coin" src="assets/img/maris-coin.svg" alt="Coin">
+                        <span class="font-m tlg-convert-text-type">1 Maris Coin</span>
+                    </div>
                 </div>
-                <div class="pb-2 pt-2 col-4 text-center text-white bg-color-black d-flex justify-content-center align-items-center">
+                <div
+                    class="pb-2 pt-2 px-1 col-4 text-center text-white bg-color-black d-flex justify-content-center align-items-center cursor-pointer" data-bs-toggle="modal" data-bs-target="#model-convert">
                     <span class="me-2 tlg-convert-text-type">Convert</span>
                     <i class="fas fa-exchange-alt"></i>
                 </div>
+
+
+
+
+
+
+
+
+
             </div>
         </div>
 
@@ -116,7 +131,7 @@
                 <span class="bitcoin-text">LITE Coin</span>
                 <span class="ms-auto bold font-m">100x</span>
             </div>
-            
+
             <!-- İstenilen kadar satır ekleyebilirsiniz -->
         </div>
 
@@ -145,10 +160,105 @@
 
 
 
+    <!-- Modal 4 -->
+    <div class="modal fade" id="model-four" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class=" model-two-header">
+                    <!-- Section with Heading -->
+                    <div class="crypto-section">
+
+
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin"
+                                class="crypto-icon">
+                            <span class="crypto-amount">100 Amount</span>
+                        </div>
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether"
+                                class="crypto-icon">
+                            <span class="crypto-amount">300 Amount</span>
+                        </div>
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum"
+                                class="crypto-icon">
+                            <span class="crypto-amount">200 Amount</span>
+                        </div>
+
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether"
+                                class="crypto-icon">
+                            <span class="crypto-amount">300 Amount</span>
+                        </div>
+                        <!-- Add more crypto items as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
+    <!-- Modal convert -->
+    <div class="modal fade" id="model-convert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header model-two-header">
+                    <!-- Section with Heading -->
+                    <div class="crypto-section">
+                        <h4 class="text-center my-3">Your Crypto Assets</h4>
+
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin"
+                                class="crypto-icon">
+                            <span class="crypto-amount">100 Amount</span>
+                        </div>
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether"
+                                class="crypto-icon">
+                            <span class="crypto-amount">300 Amount</span>
+                        </div>
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum"
+                                class="crypto-icon">
+                            <span class="crypto-amount">200 Amount</span>
+                        </div>
+
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether"
+                                class="crypto-icon">
+                            <span class="crypto-amount">300 Amount</span>
+                        </div>
+
+                        <div class="text-center p-4">
+                            <span class="text-center">Min Withdraw Limits*</span>
+                        </div>
+                        <!-- Add more crypto items as needed -->
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-around">
+                    <a href="#" class="btn btn-withdraw">Withdraw</a>
+
+                    <!-- Arayı Böl
+                                    <div class="btn-divider"></div>
+                                -->
+                    <a href="#" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

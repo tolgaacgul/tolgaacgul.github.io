@@ -48,3 +48,4 @@ window.addEventListener('keydown', (event) => {
         closeCameraModal();
     }
 });
+

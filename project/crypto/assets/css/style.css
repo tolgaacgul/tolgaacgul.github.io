@@ -6,6 +6,9 @@
 }
 
 /* GENEL KULLANILABİLİR CSS*/
+.cursor-pointer{
+    cursor: pointer;
+}
 .font-i {
     font-style: italic;
     font-size: 10px;
@@ -486,15 +489,18 @@ body {
 .custom-container {
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 25px;
+    padding: 8px 20px;
     display: flex;
     align-items: center;
     max-width: 300px;
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     text-align: center;
 }
-
+.custom-container img{
+    width: 20px;
+    margin-right: 10px;
+}
 .gas-prace {
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -502,7 +508,7 @@ body {
     display: flex;
     align-items: center;
     max-width: 120px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .gas-prace .text {
@@ -516,15 +522,15 @@ body {
 }
 
 .custom-logo {
-    width: 40px;
+    width: 30px;
     /* Logonun genişliği */
-    height: 40px;
+    height: 30px;
     /* Logonun yüksekliği */
     margin: 0 10px;
 }
 
 .custom-text {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     color: black;
 }
@@ -534,7 +540,7 @@ body {
 }
 
 .price {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .price span {
@@ -543,27 +549,35 @@ body {
 
 /*INDEX BUTONLAR*/
 .index-buttons {
-    padding: 30px 0 0 0;
+    padding: 10px 0 0 0;
     width: 100%;
 }
 
 .boost-button {
+    margin: 0 5px!important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white!important;
     border: none;
     border-radius: 28px;
-    padding: 10px 30px;
+    padding: 6px 20px;
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
-    /* Anchor tags için */
-    margin: 10px 10px;
-}
 
+    border: 2px solid white;
+    
+    /* Anchor tags için */
+}
+.bg-grad{
+    background: linear-gradient(to right, #1767d1, #0B3981, #1767d1);
+}
+.boost-button span{
+    font-size: 16px;
+}
 .boost-button:hover {
     background-color: #0056b3;
 }
@@ -592,9 +606,10 @@ body {
 }
 
 .modal-footer a {
-    font-size: 20px !important;
+    font-size: 12px !important;
     font-weight: bold;
     margin: 5px 20px !important;
+    padding: 10px!important;
 }
 
 .modal-footer {
@@ -688,7 +703,7 @@ body {
 
 .crypto-amount {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 18px!important;
 }
 
 /*3.modal*/
@@ -719,13 +734,13 @@ body {
 }
 
 .details-item {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none !important;
 }
 
 .details-amount {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -745,6 +760,7 @@ body {
 }
 
 .hash-code {
+    font-size: 14px;
     text-align: center;
     font-weight: bold;
 }
@@ -958,6 +974,20 @@ label {
     font-size: 35px;
     /* 150 değerinin boyutu */
     font-weight: bold;
+    
+
+    background: linear-gradient(to right, #1767d1, #0B3981, #1767d1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.text-grad{
+    background: linear-gradient(to right, #1767d1, #0B3981, #1767d1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*Convert coin kısmı*/
@@ -1023,7 +1053,12 @@ label {
     font-size: 18px;
     font-weight: bold;
 }
-
+.mini-logo{
+    width: 8px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #000000;
+}
 
 /*Kamera için*/
 /* Modal stil */
@@ -1066,11 +1101,44 @@ label {
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
-
 /*Kamera için*/
+#image {
+    transition: transform 0.5s ease;
+}
+.tlg-convert-text-type {
+    font-size: 12px !important;
+}
+.maris-coin-container{
+    background: linear-gradient(to right, #1767d1, #0B3981, #1767d1);    border-radius: 20px;
+    padding: 5px;
+    display: flex!important;
+    justify-content: space-around!important;
+    align-items: center;
+    color: white;
+}
+.maris-coin{
+    padding-right: 4px;
+    width:25px; 
+}
+.modal{
+    padding: 0!important;
+}
 
-/* media <= 390 px*/
-@media (max-width: 390px) {
+
+
+
+
+.choose-type{
+    cursor:pointer;
+}
+
+@media (max-width: 410px) {
+    .rotating-container {
+        width: 260px;
+        /* GIF genişliği */
+        height: 260px;
+        /* GIF yüksekliği */
+    }
     .swap-content {
         color: black;
         font-size: 14px;
@@ -1079,13 +1147,13 @@ label {
     }
 
     .swap-value {
-        font-size: 25px;
+        font-size: 30px;
         /* 150 değerinin boyutu */
-        font-weight: bold;
+        font-weight:bolder;
     }
 
     .tlg-convert-text-type {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 
     .bitcoin-text {
@@ -1142,5 +1210,9 @@ label {
     }
     .info-content .info-item .sub-text{
         font-size: 10px;
+    }
+    .crypto-amount {
+        font-weight: bold;
+        font-size: 16px!important;
     }
 }

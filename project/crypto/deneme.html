@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resmi Döndürme</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #image {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <button id="rotateButton" class="btn btn-primary mb-3">Döndür</button>
+        <div>
+            <img id="image" src="your-image-url.jpg" alt="Dönen Resim">
+        </div>
+    </div>
+
+    <script>
+        let rotationDegree = 0;
+        let speedMultiplier = 0.5;  // Başlangıç hızı
+
+        document.getElementById('rotateButton').addEventListener('click', function() {
+            rotationDegree += 360;
+            speedMultiplier *= 0.9;  // Her tıklamada hız artışı
+
+            document.getElementById('image').style.transition = `transform ${speedMultiplier}s ease`;
+            document.getElementById('image').style.transform = `rotate(${rotationDegree}deg)`;
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
