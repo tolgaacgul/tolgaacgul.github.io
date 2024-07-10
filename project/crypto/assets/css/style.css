@@ -1145,7 +1145,7 @@ p{
     transition: transform 0.5s ease;
 }
 .tlg-convert-text-type {
-    font-size: 10px !important;
+    font-size: 14px !important;
 }
 .br-50px{
     border-radius: 50px;
@@ -1164,6 +1164,9 @@ p{
 }
 .modal{
     padding: 0!important;
+}
+.br-10px{
+    border-radius: 10px;
 }
 .scan-qr-description{
     font-size: 12px;
