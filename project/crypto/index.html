@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Poppins Font -->
+    <!-- Copy için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <style>
         .rotate-img {
@@ -161,31 +162,115 @@
     <!--##### - MODAL Boost - ####-->
 
     <!-- Modal Boost -->
-            <div class="modal fade" id="model-boost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+    <div class="modal fade" id="model-boost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
-                        <div class="tlg-container">
-                            <div class="tlg-title bold">Minin Power</div>
-                            <div class="tlg-description">Here you can rent mining power for 30 day.</div>
-                            <div class="tlg-stat"><i class="fas fa-bolt"></i> 10.0GH/s</div>
-                            <div class="tlg-profit">Total Profit: -134.49 MRS</div>
-                            <div class="tlg-profit">Daily Profit: -4.49 MRS</div>
-                            <img src="assets/img/eth.svg" alt="Bitcoin Logo" class="bitcoin-logo mb-4">
+                <div class="tlg-container">
+                    <div class="tlg-title bold">Minin Power</div>
+                    <div class="tlg-description">Here you can rent mining power for 30 day.</div>
+                    <div class="tlg-stat"><i class="fas fa-bolt"></i> 10.0GH/s</div>
+                    <div class="tlg-profit">Total Profit: -134.49 MRS</div>
+                    <div class="tlg-profit">Daily Profit: -4.49 MRS</div>
+                    <img src="assets/img/eth.svg" alt="Bitcoin Logo" class="bitcoin-logo mb-4">
 
-                            <div class="tlg-input-group box-light-shadow w-100">
-                                <input type="text" placeholder="Enter amount">
-                                <span clas="bold" style="background-color: rgba(255, 255, 255, 0);">ETH</span>
-                            </div>
-                            <div class="tlg-min-amount">minimum amount: 100 ETH</div>
-                            <button class="tlg-button tlg-button-add bg-color-black">Add</button>
-                            <button class="tlg-button tlg-button-back btn btn-cancel" data-bs-dismiss="modal">Back</button>
+                    <div class="tlg-input-group box-light-shadow w-100">
+                        <input type="text" placeholder="Enter amount">
+                        <span clas="bold" style="background-color: rgba(255, 255, 255, 0);">ETH</span>
+                    </div>
+                    <div class="tlg-min-amount">minimum amount: 100 ETH</div>
+                    <button class="tlg-button tlg-button-add bg-color-black" data-bs-toggle="modal"
+                        data-bs-target="#model-boost-add">Add</button>
+                    <button class="tlg-button tlg-button-back btn btn-cancel" data-bs-dismiss="modal">Back</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Boost Add -->
+
+    <!-- Modal add -->
+    <div class="modal fade" id="model-boost-add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header ">
+                    <!-- Section with Heading -->
+                    <div class="details-box">
+                        <!-- Header Title -->
+                        <div class="details-title">Order Details</div>
+
+                        <!-- Details Rows -->
+                        <div class="details-row">
+                            <span class="details-item">Mining Power</span>
+                            <span class="details-amount">25 GH/s</span>
+                        </div>
+                        <div class="details-row">
+                            <span class="details-item">Rent Period</span>
+                            <span class="details-amount">30 Days</span>
+                        </div>
+                        <div class="details-row">
+                            <span class="details-item">Total Cost</span>
+                            <span class="details-amount">$150</span>
+                        </div>
+                        <div class="details-row">
+                            <span class="details-item">Start Date</span>
+                            <span class="details-amount">2024-07-01</span>
+                        </div>
+                        <div class="details-row">
+                            <span class="details-item">End Date</span>
+                            <span class="details-amount">2024-07-31</span>
                         </div>
 
+                        <!-- Final Title -->
+                        <div class="final-title">Scan QR Code</div>
+
+                        <!-- QR Code -->
+                        <img src="https://via.placeholder.com/150" alt="QR Code" class="qr-code">
+
+                        <!-- Hash Code -->
+                        <div class="d-flex justify-content-center">
+                            <div class="hash-code" id="hash-code">abc123xyz7890</div>
+                            <i class="fas fa-copy" id="copy-icon" style="cursor: pointer; margin-left: 10px;"></i>
+                        </div>
+                        <!-- Kopyala ikonu -->
+                        <script>
+                            document.getElementById('copy-icon').addEventListener('click', function() {
+                                var hashCodeElement = document.getElementById('hash-code');
+                                var textToCopy = hashCodeElement.textContent || hashCodeElement.innerText;
+                        
+                                navigator.clipboard.writeText(textToCopy).then(function() {
+                                    // Kopyalama başarılı olduğunda kullanıcıya bildirme (isteğe bağlı)
+                                    alert('Metin kopyalandı: ' + textToCopy);
+                                }).catch(function(err) {
+                                    // Kopyalama başarısız olduğunda hata mesajı gösterme
+                                    console.error('Metin kopyalanamadı: ', err);
+                                });
+                            });
+                        </script>
+
+                        <div class="scan-qr-description mt-2 text-center">
+                            If the Minimum Investment sent by you is less than the minimum amount, the
+                            investment will be considered as a donation.
+                            <br>
+                            Correctly sent investments will be reflected in your account within 3-5 minutes as a
+                            Gain Speed Deposit.
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="modal-footer d-flex justify-content-around">
+                    <a href="#" class="btn btn-withdraw">Withdraw</a>
+
+                    <!-- Arayı Böl
+                                <div class="btn-divider"></div>
+                            -->
+                    <a href="#" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
