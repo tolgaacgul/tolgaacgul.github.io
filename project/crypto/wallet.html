@@ -21,19 +21,46 @@
 
     <main class="main">
 
-        <div class="head-navigation d-flex justify-content-start px-2 " style="height: 70px;">
-            <a href="#" class="text-black" >
-                <img src="assets/img/arrow-ios-back.svg" alt="">
-            </a>
+        <div class="head-navigation d-flex justify-content-start px-2 " style="height: 20px;">
         </div>
 
         <div class="banner banner-wall">
-            <div class="head-title">
-                Açıklama
+            <div class="text-left">
+                <p>
+                    Please make sure that you enter the requested information correctly.
+                    If you enter a crypto network address other than the selected network address, this will result in a
+                    loss of funds as the transaction cannot be reversed.
+                </p>
+                <p>
+                    Your balance will be reflected within 15 minutes after the request is created.
+                </p>
             </div>
         </div>
 
         <form class="">
+            <div class="form-group">
+                <label for="network">Wallet
+                    <!--
+                    <a href="#" class="text-primary">
+                        <i class="fa fa-info-circle info-icon"></i>
+                    </a>
+                    -->
+                </label>
+                <div class="input-group">
+                    <input type="text" id="network" placeholder="Choose Crypto">
+
+                    <a href="#">
+                        <img width="10px" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            src="assets/img/down-blue.svg" alt="">
+                    </a>
+                    <!-- Trigger Button 1
+                    <button type="button" class="btn btn-primary" >
+                        Open Pop-up
+                    </button>
+                    -->
+                </div>
+            </div>
+
             <div class="form-group">
                 <label for="address">Address</label>
                 <div class="input-group">
@@ -46,31 +73,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
-                <label for="network">Network
-                    <!--
-                    <a href="#" class="text-primary">
-                        <i class="fa fa-info-circle info-icon"></i>
-                    </a>
-                    -->
-                </label>
-                <div class="input-group">
-                    <input type="text" id="network" placeholder="Choose Network">
 
-                    <a href="#" style="margin-top: 5px;">
-                        <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/img/down-blue.svg" alt="">
-                    </a>
-
-
-
-
-                    <!-- Trigger Button 1
-                    <button type="button" class="btn btn-primary" >
-                        Open Pop-up
-                    </button>
-                    -->
-                </div>
-            </div>
 
             <div class="form-group">
                 <label for="amount">Withdrawal Amount
@@ -82,7 +85,7 @@
                 </label>
                 <div class="input-group">
                     <input type="text" id="amount" placeholder="Minimum 0">
-                    <a href="#" class="bold ms-1 text-decoration-none" style="margin-top: 5px;">MAX</a>
+                    <a href="#" class="bold ms-1 text-decoration-none" style="margin-top:0;">MAX</a>
                 </div>
             </div>
 

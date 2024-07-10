@@ -52,17 +52,50 @@
             <div class="">
                 <div class="custom-container bg-color-white">
                     <img class="rotate-img" src="assets/img/main-logo-full.png" alt="Logo" class="custom-logo">
-
                     <div class="custom-text">
-                        <span>00.0024</span>
-                        <span>MRS</span>
+                        <span id="currentCost" class="text-grad">0.000000</span>
+                        <span class="text-grad">MRS</span>
                     </div>
+                    <script>
+                        function updateCost(targetValue) {
+                            let currentValue = parseFloat(document.getElementById('currentCost').innerText);
+                            const increment = 0.000001;
+                            const interval = 60; // 100 milisaniye (0.1 saniye) gecikme
+
+                            const intervalId = setInterval(() => {
+                                if (currentValue < targetValue) {
+                                    currentValue += increment;
+                                    document.getElementById('currentCost').innerText = currentValue.toFixed(6);
+                                } else {
+                                    document.getElementById('currentCost').innerText = targetValue.toFixed(6);
+                                    clearInterval(intervalId); // Hedef değere ulaşıldığında interval'i durdurur
+                                }
+                            }, interval);
+                        }
+
+                        // Parametre olarak ulaşmak istediğiniz hedef değeri girin (örneğin 0.000100).
+                        updateCost(0.790190);
+                    </script>
                 </div>
             </div>
             <div class="gas-prace bg-color-primary">
                 <div class="text-white text">3.0 GH/s</div>
                 <i class="fas fa-bolt"></i>
             </div>
+            <script>
+                function toggleColor() {
+                    const element = document.querySelector('.gas-prace i');
+                    setInterval(() => {
+                        if (element.style.color === 'black') {
+                            element.style.color = 'white';
+                        } else {
+                            element.style.color = 'black';
+                        }
+                    }, 200); // 500 milisaniye (0.5 saniye) interval
+                }
+
+                toggleColor();
+            </script>
             <div class="price-info">
                 <span class="text-white">Estimated Market Value</span>
             </div>
@@ -106,7 +139,9 @@
 
                 <div class="modal-header px-4 py-4">
                     <h5 class="" id="exampleModalLabel">
-                        Request your mining rewards to be transferred to your MARIS Wallet balance. After the request is successful, the amount will be deducted from your Maris Crypto Mining balance and transferred to your Wallet balance. The minimum request amount is 5 MARIS.
+                        Request your mining rewards to be transferred to your MARIS Wallet balance. After the request is
+                        successful, the amount will be deducted from your Maris Crypto Mining balance and transferred to
+                        your Wallet balance. The minimum request amount is 5 MARIS.
                     </h5>
                 </div>
 
