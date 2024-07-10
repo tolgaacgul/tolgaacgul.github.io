@@ -745,7 +745,7 @@ body {
 .details-row {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-bottom: 1px solid #333;
 }
 
@@ -1157,7 +1157,9 @@ p{
 .modal{
     padding: 0!important;
 }
-
+.scan-qr-description{
+    font-size: 12px;
+}
 /* Button Boost */
 .tlg-container {
     margin: 20px auto;
