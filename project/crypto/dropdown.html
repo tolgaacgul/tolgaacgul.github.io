@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dropdown Menu</title>
+    <style>
+        .unique-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .unique-dropdown-button {
+            background-color: transparent;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .unique-dropdown-button:focus {
+            outline: none;
+        }
+        .unique-dropdown-button::after {
+            content: ' \25BC'; /* Unicode karakteri: aşağı ok işareti (V şeklinde) */
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .unique-dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .unique-dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .unique-dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+        .unique-dropdown:hover .unique-dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="unique-dropdown">
+        <button class="unique-dropdown-button">Choose an option</button>
+        <div class="unique-dropdown-menu">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
+</body>
+</html>
