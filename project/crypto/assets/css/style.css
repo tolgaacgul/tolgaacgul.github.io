@@ -1157,8 +1157,72 @@ p{
     padding: 0!important;
 }
 
-
-
+/* Button Boost */
+.tlg-container {
+    margin: 20px auto;
+    padding: 20px 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+.tlg-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.tlg-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.tlg-stat {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.tlg-profit {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+.tlg-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tlg-input-group input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    width: 80%;
+    text-align: right;
+}
+.tlg-input-group span {
+    padding: 10px;
+    background-color: #eee;
+    border: none;
+}
+.tlg-min-amount {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+.tlg-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tlg-button-add {
+    background-color: #007bff;
+    color: #fff;
+}
+.tlg-button-back {
+    background-color: #f4f4f4;
+    color: #000;
+}
 
 
 .choose-type{
