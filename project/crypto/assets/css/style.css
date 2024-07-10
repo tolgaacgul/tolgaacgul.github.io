@@ -1161,17 +1161,17 @@ p{
 /* Button Boost */
 .tlg-container {
     margin: 20px auto;
-    padding: 20px 5px;
+    padding: 10px 5px;
     background-color: #fff;
     border-radius: 8px;
     text-align: center;
 }
 .tlg-title {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 .tlg-description {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 20px;
 }
 .tlg-stat {
@@ -1188,7 +1188,10 @@ p{
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    border-radius: 25px;
+    overflow: hidden;
 }
+
 .tlg-input-group input {
     border: none;
     border-bottom: 1px solid #ccc;
