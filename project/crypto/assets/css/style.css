@@ -1140,7 +1140,7 @@ p{
     transition: transform 0.5s ease;
 }
 .tlg-convert-text-type {
-    font-size: 12px !important;
+    font-size: 10px !important;
 }
 .maris-coin-container{
     background: linear-gradient(to right, #1767d1, #0B3981, #1767d1);    border-radius: 20px;

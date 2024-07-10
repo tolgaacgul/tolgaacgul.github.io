@@ -50,7 +50,7 @@
                     <input type="text" id="network" placeholder="Choose Crypto">
 
                     <a href="#">
-                        <img width="10px" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        <img width="10px" data-bs-toggle="modal" data-bs-target="#model-wallet-choose"
                             src="assets/img/down-blue.svg" alt="">
                     </a>
                     <!-- Trigger Button 1
@@ -221,20 +221,54 @@
 
 
 
-    <!-- Modal 1 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Wallet Chose Crypto -->
+    <div class="modal fade" id="model-wallet-choose" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
-                <div class="modal-header">
-                    <h5 class="modal-title mx-auto" id="exampleModalLabel">Modal Title</h5>
+                <div class="modal-header model-two-header">
+                    <!-- Section with Heading -->
+                    <div class="crypto-section">
+                        <h4 class="text-center my-3">Your Crypto Assets</h4>
+
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin"
+                                class="crypto-icon">
+                            <span class="crypto-amount">100 Amount</span>
+                        </div>
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether"
+                                class="crypto-icon">
+                            <span class="crypto-amount">300 Amount</span>
+                        </div>
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum"
+                                class="crypto-icon">
+                            <span class="crypto-amount">200 Amount</span>
+                        </div>
+
+                        <!-- Crypto Item -->
+                        <div class="crypto-item">
+                            <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="Tether"
+                                class="crypto-icon">
+                            <span class="crypto-amount">300 Amount</span>
+                        </div>
+
+                        <div class="text-center p-4">
+                            <span class="text-center">Min Withdraw Limits*</span>
+                        </div>
+                        <!-- Add more crypto items as needed -->
+                    </div>
                 </div>
 
                 <div class="modal-footer d-flex justify-content-around">
                     <a href="#" class="btn btn-withdraw">Withdraw</a>
 
                     <!-- Arayı Böl
-                <div class="btn-divider"></div>
+                    <div class="btn-divider"></div>
                 -->
                     <a href="#" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
                 </div>
