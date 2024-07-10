@@ -1038,10 +1038,15 @@ p{
 .border-0{
     border: 0;
 }
-.convert-box {
+.bg-lineer{
     background: linear-gradient(to bottom right, #010011, #196FE0);
-    padding: 25px !important;
+}
+.convert-box {
+    padding: 15px 25px!important;
     border-radius: 14px;
+}
+.bg-none{
+    background: linear-gradient(to bottom right, #ffffff00, #ffffff00)!important;
 }
 
 /*BITCOIN LİSTELEMELERİ*/
@@ -1142,11 +1147,14 @@ p{
 .tlg-convert-text-type {
     font-size: 10px !important;
 }
+.br-50px{
+    border-radius: 50px;
+}
 .maris-coin-container{
     background: linear-gradient(to right, #1767d1, #0B3981, #1767d1);    border-radius: 20px;
     padding: 5px;
     display: flex!important;
-    justify-content: space-around!important;
+    justify-content: center!important;
     align-items: center;
     color: white;
 }
