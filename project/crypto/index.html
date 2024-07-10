@@ -53,7 +53,10 @@
                 <div class="custom-container bg-color-white">
                     <img class="rotate-img" src="assets/img/main-logo-full.png" alt="Logo" class="custom-logo">
 
-                    <div class="custom-text">00.000</div>
+                    <div class="custom-text">
+                        <span>00.0024</span>
+                        <span>MRS</span>
+                    </div>
                 </div>
             </div>
             <div class="gas-prace bg-color-primary">
@@ -78,10 +81,11 @@
                 <i class="fas fa-rocket"></i>
             </button>
 
-            <button class="boost-button bg-color-white bg-grad">
+            <button class="boost-button bg-color-white bg-grad" data-bs-target="#modalClaim" data-bs-toggle="modal">
                 <span>Claim</span>
                 <i class="fas fa-dollar-sign"></i>
             </button>
+
         </div>
 
 
@@ -93,9 +97,30 @@
 
 
 
+    <!--##### - MODAL CLAİM - ####-->
 
+    <!-- Modal Claim -->
+    <div class="modal fade" id="modalClaim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
+                <div class="modal-header px-4 py-4">
+                    <h5 class="" id="exampleModalLabel">
+                        Request your mining rewards to be transferred to your MARIS Wallet balance. After the request is successful, the amount will be deducted from your Maris Crypto Mining balance and transferred to your Wallet balance. The minimum request amount is 5 MARIS.
+                    </h5>
+                </div>
 
+                <div class="modal-footer d-flex justify-content-around">
+                    <a href="#" class="btn btn-withdraw">Withdraw</a>
+
+                    <!-- Arayı Böl
+                        <div class="btn-divider"></div>
+                        -->
+                    <a href="#" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

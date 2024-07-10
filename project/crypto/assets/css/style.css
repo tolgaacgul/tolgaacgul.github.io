@@ -1020,7 +1020,9 @@ label {
 .bg-color-black {
     background-color: #010011;
 }
-
+.border-0{
+    border: 0;
+}
 .convert-box {
     background: linear-gradient(to bottom right, #010011, #196FE0);
     padding: 25px !important;
